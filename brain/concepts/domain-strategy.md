@@ -22,6 +22,7 @@ Estratégia de empresa, vantagens competitivas, modelos de negócio, narrativas 
 
 <!-- Agent: mantenha esta lista. Adicione novas páginas ao criar. -->
 - [application-layer-sherlock-defense] — Sherlock Defense: framework para empresas de application layer se defenderem de LLM providers entrando no seu vertical. Por Winston Weinberg (Harvey).
+- [brazil-regulatory-infrastructure-hidden-strengths] — Os pontos fortes ocultos do Brasil: BCB/PIX/DREX, eSocial, CADE. Por que o Brasil está à frente do mundo em infraestrutura regulatória financeira e trabalhista. Fonte: Sebas Mejia (abr/2026).
 
 ## Gaps / O que falta
 

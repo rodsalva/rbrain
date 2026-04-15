@@ -24,6 +24,8 @@ que queremos servir e o que elas fazem hoje".
 <!-- Agent: mantenha esta lista. Adicione novas páginas ao criar. -->
 - [funcoes-tributarias-brasil] — Taxonomia das funções tributárias no Brasil (Contábil, Fiscal, Tributário): distinções, orientação temporal, perfil de automação
 - [legal-ai-market-disruption] — Dinâmicas de mercado do Legal AI: impacto em empregos, transformação de law firms, billable hour disruption, e padrões de adoção enterprise. Fonte: Harvey CEO Winston Weinberg (nov/2025).
+- [custo-brasil-regulatory-complexity] — O Custo Brasil: complexidade regulatória, legislação trabalhista (CLT + convenções + TRTs), eSocial, e a oportunidade de $20-30B. Fonte: Tako CEO Sebas Mejia (abr/2026).
+- [latam-ai-opportunity-haas] — LATAM AI: oportunidade de skip-generation (HaaS → AI direto), tamanho de mercado, risco de soberania e o que é preciso para vencer. Fonte: Tako CEO Sebas Mejia (abr/2026).
 
 ## Gaps / O que falta
 
