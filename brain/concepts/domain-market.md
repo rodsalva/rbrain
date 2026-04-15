@@ -23,6 +23,7 @@ que queremos servir e o que elas fazem hoje".
 
 <!-- Agent: mantenha esta lista. Adicione novas páginas ao criar. -->
 - [funcoes-tributarias-brasil] — Taxonomia das funções tributárias no Brasil (Contábil, Fiscal, Tributário): distinções, orientação temporal, perfil de automação
+- [legal-ai-market-disruption] — Dinâmicas de mercado do Legal AI: impacto em empregos, transformação de law firms, billable hour disruption, e padrões de adoção enterprise. Fonte: Harvey CEO Winston Weinberg (nov/2025).
 
 ## Gaps / O que falta
 
