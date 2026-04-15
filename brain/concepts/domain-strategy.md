@@ -23,10 +23,11 @@ Estratégia de empresa, vantagens competitivas, modelos de negócio, narrativas 
 <!-- Agent: mantenha esta lista. Adicione novas páginas ao criar. -->
 - [application-layer-sherlock-defense] — Sherlock Defense: framework para empresas de application layer se defenderem de LLM providers entrando no seu vertical. Por Winston Weinberg (Harvey).
 - [brazil-regulatory-infrastructure-hidden-strengths] — Os pontos fortes ocultos do Brasil: BCB/PIX/DREX, eSocial, CADE. Por que o Brasil está à frente do mundo em infraestrutura regulatória financeira e trabalhista. Fonte: Sebas Mejia (abr/2026).
+- [manor-moat-analysis] — Sherlock Defense aplicado ao Manor: Level 1 passa, dois de três pilares de moat faltando. Prioridades: fechar BTG + integração SPED.
+- [sped-ontologia-infraestrutura] — SPED tem a ontologia unificada que judiciário e administrativo são obrigados a usar. Integrar com SPED = infraestrutura fiscal, não chatbot. Insight de Milton (abr/2026).
 
 ## Gaps / O que falta
 
-- Framework de moat aplicado ao contexto de Manor/tributação
 - Análise competitiva de legaltech / tributação AI
 
 ---
@@ -34,3 +35,4 @@ Estratégia de empresa, vantagens competitivas, modelos de negócio, narrativas 
 ## Timeline
 
 - **2026-04-15** | Criação — Hub do domínio Strategy criado. 1 página indexada (sherlock defense).
+- **2026-04-15** | Update — Sherlock Defense aplicado ao Manor indexado. Gap de moat framework fechado. SPED como infraestrutura estratégica adicionado.

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manor × BTG Pactual — v5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0a0a0a; --bg2: #111; --bg3: #181818;
+    --text: #f7f5f2; --muted: #888; --dim: rgba(212,208,203,0.10);
+    --border: rgba(212,208,203,0.14);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+  html, body { width:100%; height:100%; background:var(--bg); color:var(--text); font-family:var(--sans); overflow:hidden; -webkit-font-smoothing:antialiased; }
+
+  #deck { width:100vw; height:100vh; position:relative; overflow:hidden; }
+  .slide { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; padding:6.5vh 8.5vw; opacity:0; pointer-events:none; transform:translateX(36px); transition:opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); }
+  .slide.active { opacity:1; pointer-events:all; transform:translateX(0); }
+  .slide.exit { opacity:0; transform:translateX(-36px); transition:opacity .3s ease, transform .3s ease; }
+
+  .eye { font-size:.56rem; font-weight:400; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin-bottom:1.8rem; }
+  h2 { font-family:var(--serif); font-size:clamp(1.9rem,3.6vw,3.2rem); font-weight:300; line-height:1.1; color:var(--text); max-width:860px; }
+  h2 em { font-style:italic; }
+  .rule { width:40px; height:1px; background:var(--border); margin:1.8rem 0; }
+  strong { font-weight:400; color:var(--text); }
+
+  /* COVER */
+  .cover-label { font-size:.56rem; font-weight:400; letter-spacing:.26em; text-transform:uppercase; color:var(--muted); margin-bottom:3rem; }
+  .cover-title { font-family:var(--serif); font-size:clamp(2.8rem,6vw,5.6rem); font-weight:300; line-height:1.04; letter-spacing:-.015em; max-width:860px; }
+  .cover-title em { font-style:italic; }
+  .cover-sub { margin-top:2rem; font-size:.82rem; font-weight:300; color:var(--muted); line-height:1.85; max-width:500px; }
+
+  /* JD SLIDE */
+  .jd-wrap { display:grid; grid-template-columns:1fr 1fr; gap:0 5vw; max-width:1000px; margin-top:1.8rem; width:100%; }
+  .jd-item { display:flex; align-items:baseline; gap:1.2rem; padding:.85rem 0; border-bottom:1px solid var(--dim); }
+  .jd-item:first-child { border-top:1px solid var(--dim); }
+  .jd-score { font-family:var(--serif); font-size:1rem; font-weight:300; min-width:1rem; text-align:right; flex-shrink:0; }
+  .jd-text { font-size:.74rem; font-weight:300; line-height:1.55; }
+  .jd-item.on .jd-score { color:var(--text); }
+  .jd-item.on .jd-text { color:rgba(247,245,242,.85); }
+  .jd-item.mid .jd-score { color:rgba(212,208,203,.5); }
+  .jd-item.mid .jd-text { color:rgba(212,208,203,.45); }
+  .jd-item.off .jd-score { color:rgba(212,208,203,.18); }
+  .jd-item.off .jd-text { color:rgba(212,208,203,.18); }
+
+  /* BEFORE / AFTER */
+  .ba-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; max-width:960px; margin-top:2rem; width:100%; }
+  .ba-col { background:var(--bg3); border:1px solid var(--border); padding:1.6rem 1.5rem; }
+  .ba-col.after { background:var(--bg2); border-color:rgba(212,208,203,.28); position:relative; }
+  .ba-col.after::before { content:'MANOR'; position:absolute; top:-1px; left:50%; transform:translateX(-50%); font-size:.46rem; font-weight:500; letter-spacing:.2em; background:var(--text); color:var(--bg); padding:.2rem .75rem; white-space:nowrap; }
+  .ba-label { font-size:.52rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-bottom:1.1rem; }
+  .ba-item { display:flex; gap:.9rem; align-items:flex-start; padding:.6rem 0; border-bottom:1px solid var(--dim); }
+  .ba-item:last-child { border-bottom:none; }
+  .ba-icon { font-size:.7rem; color:var(--muted); flex-shrink:0; margin-top:.05rem; }
+  .ba-col.after .ba-icon { color:rgba(247,245,242,.6); }
+  .ba-text { font-size:.72rem; font-weight:300; line-height:1.6; color:var(--muted); }
+  .ba-col.after .ba-text { color:rgba(247,245,242,.78); }
+
+  /* GAPS */
+  .gap-list { display:flex; flex-direction:column; gap:0; max-width:880px; margin-top:2rem; width:100%; }
+  .gap-row { display:grid; grid-template-columns:2rem 1fr 1fr; gap:2.2rem; align-items:baseline; padding:1.15rem 0; border-bottom:1px solid var(--dim); }
+  .gap-row:first-child { border-top:1px solid var(--dim); }
+  .gap-n { font-family:var(--serif); font-size:1.3rem; font-weight:300; color:rgba(212,208,203,.18); }
+  .gap-now { font-size:.74rem; font-weight:300; color:var(--muted); line-height:1.65; }
+  .gap-manor { font-size:.74rem; font-weight:300; color:rgba(247,245,242,.82); line-height:1.65; }
+
+  /* MOCK */
+  .mock { width:100%; border:1px solid var(--border); background:var(--bg2); }
+  .mock-bar { display:flex; align-items:center; gap:.6rem; padding:.65rem 1.2rem; border-bottom:1px solid var(--border); }
+  .mock-dot { width:6px; height:6px; border-radius:50%; background:rgba(212,208,203,.12); }
+  .mock-label { font-size:.54rem; font-weight:400; letter-spacing:.18em; text-transform:uppercase; color:rgba(136,136,136,.3); margin-left:auto; }
+  .mock-query { padding:1.1rem 1.5rem; border-bottom:1px solid var(--border); }
+  .mock-q-label { font-size:.54rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-bottom:.4rem; }
+  .mock-q-text { font-family:var(--serif); font-size:.95rem; font-weight:300; color:var(--text); line-height:1.4; font-style:italic; }
+  .mock-resumo { padding:1rem 1.5rem; background:rgba(212,208,203,.04); border-bottom:1px solid var(--border); }
+  .mock-r-label { font-size:.54rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-bottom:.55rem; }
+  .mock-r-text { font-size:.73rem; font-weight:300; color:rgba(247,245,242,.82); line-height:1.8; }
+  .mock-r-text em { font-style:normal; font-weight:400; color:var(--text); }
+  .mock-answer { padding:1rem 1.5rem; }
+  .mock-a-label { font-size:.54rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-bottom:.55rem; }
+  .mock-a-text { font-size:.7rem; font-weight:300; color:rgba(247,245,242,.55); line-height:1.8; }
+  .mock-a-text em { font-style:normal; font-weight:400; color:rgba(247,245,242,.75); }
+  .mock-sources { display:flex; gap:.4rem; flex-wrap:wrap; padding:.8rem 1.5rem; border-top:1px solid var(--border); }
+  .source-tag { font-size:.52rem; font-weight:400; letter-spacing:.13em; text-transform:uppercase; border:1px solid var(--border); padding:.2rem .55rem; color:var(--muted); }
+
+  /* SLA */
+  .sla-g { display:grid; grid-template-columns:1fr 1fr; gap:2px; max-width:720px; margin-top:2rem; }
+  .si { background:var(--bg3); border:1px solid var(--border); padding:1.5rem 1.4rem; }
+  .si-l { font-size:.54rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-bottom:.55rem; }
+  .si-v { font-family:var(--serif); font-size:1.25rem; font-weight:300; color:var(--text); line-height:1.2; margin-bottom:.3rem; }
+  .si-d { font-size:.7rem; font-weight:300; color:var(--muted); line-height:1.6; }
+
+  /* PRICE */
+  .price-row { display:grid; grid-template-columns:1fr 1fr; gap:2px; max-width:800px; margin-top:2rem; }
+  .pc { background:var(--bg3); border:1px solid var(--border); padding:2rem 1.7rem; position:relative; }
+  .pc.best { background:var(--bg2); border-color:rgba(212,208,203,.28); }
+  .pc.best::before { content:'RECOMENDADO'; position:absolute; top:-1px; left:50%; transform:translateX(-50%); font-size:.46rem; font-weight:500; letter-spacing:.2em; background:var(--text); color:var(--bg); padding:.2rem .75rem; white-space:nowrap; }
+  .pt { font-size:.54rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-bottom:1rem; }
+  .pa { font-family:var(--serif); font-size:2.4rem; font-weight:300; color:var(--text); line-height:1; }
+  .pp { font-size:.66rem; font-weight:300; color:var(--muted); margin:.25rem 0 1.4rem; }
+  .pf { list-style:none; display:flex; flex-direction:column; gap:.45rem; }
+  .pf li { font-size:.72rem; font-weight:300; color:var(--muted); line-height:1.55; }
+  .pf li strong { font-weight:400; color:rgba(247,245,242,.85); }
+
+  /* ROADMAP */
+  .rq { background:var(--bg3); border:1px solid var(--border); padding:1.6rem 1.4rem; }
+  .rq.now { background:var(--bg2); border-color:rgba(212,208,203,.28); }
+  .rq-q { font-size:.5rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-bottom:.45rem; }
+  .rq-title { font-family:var(--serif); font-size:.9rem; font-weight:300; color:var(--text); margin-bottom:1rem; line-height:1.25; }
+  .rq-items { display:flex; flex-direction:column; gap:.6rem; }
+  .rq-item { font-size:.7rem; font-weight:300; line-height:1.55; }
+  .rq.now .rq-item { color:rgba(247,245,242,.75); }
+  .rq-item { color:var(--muted); }
+  .rq-item.btg { color:rgba(247,245,242,.5); font-style:italic; }
+
+  /* NAV */
+  #nav { position:fixed; bottom:2.2rem; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:1.2rem; z-index:100; }
+  .nb { background:none; border:1px solid var(--border); color:var(--muted); width:34px; height:34px; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:.68rem; transition:border-color .2s, color .2s; font-family:var(--sans); }
+  .nb:hover { border-color:var(--muted); color:var(--text); }
+  #ctr { font-size:.54rem; font-weight:400; letter-spacing:.18em; color:var(--muted); min-width:3.8rem; text-align:center; }
+  #dots { position:fixed; right:2.2rem; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:.65rem; z-index:100; }
+  .dot { width:4px; height:4px; background:var(--border); cursor:pointer; transition:background .2s, transform .2s; }
+  .dot.on { background:var(--text); transform:scaleY(1.8); }
+  #logo { position:fixed; top:2rem; left:2.4rem; font-family:var(--serif); font-size:1rem; font-weight:300; color:var(--muted); z-index:100; }
+  #sn { position:fixed; top:2rem; right:2.4rem; font-size:.52rem; letter-spacing:.15em; color:rgba(136,136,136,.28); z-index:100; }
+  #bar { position:fixed; bottom:0; left:0; height:1px; background:rgba(212,208,203,.2); transition:width .4s ease; z-index:100; }
+  #fsh { position:fixed; top:2rem; left:50%; transform:translateX(-50%); font-size:.52rem; letter-spacing:.14em; color:rgba(136,136,136,.26); z-index:100; cursor:pointer; transition:color .2s; }
+  #fsh:hover { color:var(--muted); }
+</style>
+</head>
+<body>
+<div id="logo">Manor</div>
+<div id="sn"></div>
+<div id="fsh" onclick="tFS()">F — tela cheia</div>
+<div id="bar"></div>
+<div id="dots"></div>
+
+<div id="deck">
+
+<!-- 01 — CAPA -->
+<section class="slide active">
+  <div class="cover-label">Manor · BTG Pactual · Abril 2026</div>
+  <div class="cover-title">
+    Tributário federal.<br>
+    <em>Como um sênior responderia.</em>
+  </div>
+  <div class="cover-sub">
+    Legislação, CARF, STJ, STF e Receita Federal em linguagem natural — com resposta direta, escopo certo e fonte em cada afirmação. Construído para times de tax em instituições financeiras de ponta.
+  </div>
+</section>
+
+<!-- 02 — O TIME BTG -->
+<section class="slide">
+  <div class="eye">O trabalho do time de Tax Ops · BTG Pactual</div>
+  <h2>Sabemos o que o seu time faz.<br><em>Aqui é onde a Manor entra.</em></h2>
+  <div class="jd-wrap" style="margin-top:1.6rem;">
+    <div>
+      <div class="jd-item on">
+        <div class="jd-score">3</div>
+        <div class="jd-text">Acompanhamento da legislação tributária e apoio em planejamentos</div>
+      </div>
+      <div class="jd-item on">
+        <div class="jd-score">2</div>
+        <div class="jd-text">Revisão da tributação de clientes em investimentos — fundos, renda fixa, renda variável, INR</div>
+      </div>
+      <div class="jd-item mid">
+        <div class="jd-score">1</div>
+        <div class="jd-text">Suporte a fiscalizações, auditorias e elaboração de pareceres internos</div>
+      </div>
+      <div class="jd-item off">
+        <div class="jd-score">0</div>
+        <div class="jd-text">Apuração e contabilização de tributos federais e municipais</div>
+      </div>
+    </div>
+    <div>
+      <div class="jd-item off">
+        <div class="jd-score">0</div>
+        <div class="jd-text">Recolhimentos em operações de câmbio e crédito</div>
+      </div>
+      <div class="jd-item off">
+        <div class="jd-score">0</div>
+        <div class="jd-text">Conciliação das Contas Fiscais</div>
+      </div>
+      <div class="jd-item off">
+        <div class="jd-score">0</div>
+        <div class="jd-text">Elaboração de obrigações acessórias tributárias</div>
+      </div>
+      <div class="jd-item off">
+        <div class="jd-score">0</div>
+        <div class="jd-text">Desenvolvimento de ferramentas de controle para a área de tax</div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:1.5rem; font-size:.7rem; font-weight:300; color:rgba(136,136,136,.4); line-height:1.7; max-width:680px;">
+    Score 0–3 baseado nos temas reais trabalhados pelo time BTG na Manor desde março. Itens destacados são onde a ferramenta tem uso diário comprovado.
+  </div>
+</section>
+
+<!-- 03 — ESCRITA PARA PROFISSIONAIS -->
+<section class="slide">
+  <div class="eye">O que diferencia a Manor · Escrita para quem sabe</div>
+  <h2>Você não precisa de contexto.<br><em>Precisa da resposta.</em></h2>
+  <div class="ba-grid" style="margin-top:1.8rem;">
+    <div class="ba-col">
+      <div class="ba-label">IA genérica</div>
+      <div class="ba-item">
+        <div class="ba-icon">—</div>
+        <div class="ba-text">Conclusão no final, após parágrafos de contexto que você já conhece</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">—</div>
+        <div class="ba-text">Responde temas adjacentes que não foram perguntados</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">—</div>
+        <div class="ba-text">Mesmo volume para perguntas simples e perguntas complexas</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">—</div>
+        <div class="ba-text">Mistura legislação vigente com propostas sem distinção clara</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">—</div>
+        <div class="ba-text">Dezenas de citações do mesmo dispositivo em formas diferentes</div>
+      </div>
+    </div>
+    <div class="ba-col after">
+      <div class="ba-label">Manor</div>
+      <div class="ba-item">
+        <div class="ba-icon">+</div>
+        <div class="ba-text"><strong>Enquadramento normativo na primeira frase.</strong> "A tributação dos ganhos de INR em FIP está disciplinada pela Lei 14.754/2023..."</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">+</div>
+        <div class="ba-text"><strong>Escopo estrito.</strong> A pergunta foi sobre coobrigados no IOF — a resposta é sobre coobrigados no IOF</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">+</div>
+        <div class="ba-text"><strong>Complexidade calibrada.</strong> "Quais as normas?" → lista estruturada. "Como se tributa X em Y?" → análise completa</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">+</div>
+        <div class="ba-text"><strong>Vigente vs. proposta explícito.</strong> MP 1.303/2025 sempre marcada como proposta, nunca como lei</div>
+      </div>
+      <div class="ba-item">
+        <div class="ba-icon">+</div>
+        <div class="ba-text"><strong>Fonte consolidada.</strong> Um artigo bem colocado supera cinco fragmentados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 — OS 3 GAPS -->
+<section class="slide">
+  <div class="eye">O que falta para o BTG hoje</div>
+  <h2>3 coisas que<br><em>nenhuma ferramenta entrega.</em></h2>
+  <div class="gap-list">
+    <div class="gap-row">
+      <div class="gap-n">01</div>
+      <div class="gap-now">Monitoramento ativo de teses.<br>Nenhum alerta quando CARF ou STJ decide algo que afeta as estruturas do BTG — FIP amortização, INR ganho de capital, IOF/coobrigado.</div>
+      <div class="gap-manor"><strong>Manor:</strong> Configure os temas que importam. Alerta no mesmo dia com texto da decisão e impacto resumido para as estruturas específicas do banco.</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-n">02</div>
+      <div class="gap-now">Sinal de risco para provisão.<br>O CFO pergunta "quanto provisionar nessa tese" e a resposta leva dias de pesquisa manual em acórdãos.</div>
+      <div class="gap-manor"><strong>Manor:</strong> Qual o percentual de casos com esse perfil que vencem no CARF hoje? Resposta fundamentada em histórico de acórdãos — não em intuição do analista.</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-n">03</div>
+      <div class="gap-now">Briefing para counsel externo.<br>O memorando de instrução para o escritório contratado é escrito manualmente, em horas, por quem deveria estar fazendo outra coisa.</div>
+      <div class="gap-manor"><strong>Manor:</strong> Situação fática + tese → briefing estruturado pronto para enviar. 3 horas vira 15 minutos. O time revisa; a Manor escreve o primeiro rascunho.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 — EXEMPLO REAL: O RESUMO -->
+<section class="slide">
+  <div class="eye">Como a Manor responde · Consulta real · Formato parecer</div>
+  <div style="display:flex; align-items:flex-start; gap:4vw; width:100%; max-width:1080px;">
+    <div style="flex:1; padding-top:.4rem;">
+      <h2 style="font-size:clamp(1.4rem,2.3vw,2rem); max-width:300px; line-height:1.2;">Uma pergunta real.<br><em>Uma resposta de sênior.</em></h2>
+      <div class="rule"></div>
+      <div style="font-size:.73rem; font-weight:300; color:var(--muted); line-height:1.9; max-width:270px;">
+        O <strong style="color:rgba(247,245,242,.7);">Resumo</strong> aparece primeiro — síntese analítica em prosa, 150 palavras, no padrão de parecer.<br><br>
+        A resposta completa fica abaixo — para quem precisa da fundamentação detalhada.<br><br>
+        Você cita o Resumo. Você lê a Answer. A fonte é a mesma.
+      </div>
+    </div>
+    <div class="mock" style="flex:2;">
+      <div class="mock-bar">
+        <div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div>
+        <div class="mock-label">Manor · Consulta Tributária</div>
+      </div>
+      <div class="mock-query">
+        <div class="mock-q-label">Consulta</div>
+        <div class="mock-q-text">"A integralização de cotas de FIP em um FIM por investidor não residente é evento tributável? Qual a base legal?"</div>
+      </div>
+      <div class="mock-resumo">
+        <div class="mock-r-label">Resumo</div>
+        <div class="mock-r-text">
+          A integralização de cotas de FIP em FIM por investidor não residente configura evento tributável no Brasil. A <em>Lei nº 13.043/2014, art. 1º</em>, equipara expressamente a entrega de ativos financeiros na integralização de cotas a uma alienação para fins fiscais — o fato gerador ocorre no momento da integralização, tomando por base o valor de mercado das cotas entregues. Aplica-se IRRF de 15% sobre o ganho apurado, nos termos do <em>art. 34 da Lei 14.754/2023</em>, cabendo ao administrador do FIM a retenção e o recolhimento. Exceção: se as cotas integralizadas forem de FIP-IE ou FIP-PD&I e o INR não residir em jurisdição favorecida, aplica-se alíquota zero. Assim, a operação deve ser estruturada com atenção ao custo de aquisição das cotas do FIP — sua ausência implica base de cálculo presumida como zero.
+        </div>
+      </div>
+      <div class="mock-answer">
+        <div class="mock-a-label">Resposta Completa ↓</div>
+        <div class="mock-a-text">
+          <em>Lei 13.043/2014, art. 1º; Lei 14.754/2023, arts. 34 e 36; IN RFB 1.585/2015...</em> [fundamentação detalhada expandida abaixo]
+        </div>
+      </div>
+      <div class="mock-sources">
+        <span class="source-tag">Lei 13.043/2014 · art. 1º</span>
+        <span class="source-tag">Lei 14.754/2023 · art. 34</span>
+        <span class="source-tag">IN RFB 1.585/2015</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 — CONFIANÇA -->
+<section class="slide">
+  <div class="eye">Precisão e Responsabilidade</div>
+  <h2>Não prometemos zero alucinações.<br><em>Entregamos contratualmente.</em></h2>
+  <div class="sla-g">
+    <div class="si">
+      <div class="si-l">Citação de fonte</div>
+      <div class="si-v">100% rastreável</div>
+      <div class="si-d">Toda afirmação tem endereço: acórdão, Tema do STJ, SC COSIT ou artigo de lei. O profissional valida — a Manor não decide sozinha.</div>
+    </div>
+    <div class="si">
+      <div class="si-l">SLA de acurácia</div>
+      <div class="si-v">25% crédito por incidente</div>
+      <div class="si-d">Erro documentado = crédito de 25% aplicado automaticamente na renovação. Cap de 25%/mês e 3 meses/ano. Contrato, não promessa.</div>
+    </div>
+    <div class="si">
+      <div class="si-l">Atualização</div>
+      <div class="si-v">Ingestão diária</div>
+      <div class="si-d">Novas normas, acórdãos do CARF e Soluções de Consulta processados continuamente. O sistema reflete o estado atual do direito — inclusive MPs em tramitação, marcadas como tal.</div>
+    </div>
+    <div class="si">
+      <div class="si-l">Aprendizado contínuo</div>
+      <div class="si-v">O produto ouve o uso</div>
+      <div class="si-d">Feedbacks reais do time BTG alimentam diretamente a calibração. O que você encontra como gap hoje vira cobertura amanhã. Clientes fundadores moldam o produto.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 — PROPOSTA -->
+<section class="slide">
+  <div class="eye">Proposta para o BTG Pactual · Abril 2026</div>
+  <h2>Formalizar o que<br><em>já está funcionando.</em></h2>
+  <div class="price-row">
+    <div class="pc">
+      <div class="pt">Research</div>
+      <div class="pa">R$&thinsp;10.000</div>
+      <div class="pp">por mês · contrato anual · até 3 usuários</div>
+      <ul class="pf">
+        <li>Busca unificada cross-source</li>
+        <li>CARF — 120.000+ acórdãos indexados</li>
+        <li>STF, STJ, TRFs, legislação federal</li>
+        <li>Soluções de Consulta COSIT</li>
+        <li>Lei 14.754/2023 e reforma tributária</li>
+        <li>Resumo no padrão parecer jurídico</li>
+        <li>SLA de acurácia formal</li>
+      </ul>
+    </div>
+    <div class="pc best">
+      <div class="pt">Intelligence</div>
+      <div class="pa">R$&thinsp;25.000</div>
+      <div class="pp">por mês · contrato anual · até 10 usuários</div>
+      <ul class="pf">
+        <li>Tudo do Research</li>
+        <li><strong>Monitoramento de teses configurável</strong></li>
+        <li><strong>Alertas de nova decisão por tema</strong></li>
+        <li><strong>Sinal de risco para provisão (CARF trend)</strong></li>
+        <li><strong>Briefing estruturado para counsel externo</strong></li>
+        <li>Chat multi-conversação ilimitado</li>
+        <li>Onboarding e capacitação do time</li>
+        <li>Suporte com SLA de 24h</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rule" style="margin-top:1.6rem;"></div>
+  <div style="font-size:.72rem; font-weight:300; color:var(--muted); line-height:1.8; max-width:700px;">
+    <strong>Transição do Pioneer:</strong> O BTG já usa a Manor. Intelligence ativa monitoramento, abre acesso para todo o time e formaliza o SLA. <strong>Oferta de abril:</strong> 30 dias de onboarding sem custo adicional, com calibração personalizada para os temas do banco (FIP, FII, INR, reforma tributária).
+  </div>
+</section>
+
+<!-- 08 — ROADMAP -->
+<section class="slide">
+  <div class="eye">O que vem a seguir · Moldado pelo uso real</div>
+  <h2>Roadmap.<br><em>Por trimestre.</em></h2>
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; max-width:1040px; margin-top:2rem; width:100%;">
+    <div class="rq now">
+      <div class="rq-q">Q2 2026 <span style="font-size:.44rem; font-weight:500; letter-spacing:.15em; background:var(--text); color:var(--bg); padding:.15rem .45rem; margin-left:.4rem; vertical-align:middle;">LIVE</span></div>
+      <div class="rq-title">Agora</div>
+      <div class="rq-items">
+        <div class="rq-item">Busca unificada + CARF</div>
+        <div class="rq-item">Resumo no padrão parecer</div>
+        <div class="rq-item">Monitoramento de teses</div>
+        <div class="rq-item rq-item btg">↑ Priorizado pelo BTG</div>
+      </div>
+    </div>
+    <div class="rq">
+      <div class="rq-q">Q3 2026</div>
+      <div class="rq-title">Geração de documentos</div>
+      <div class="rq-items">
+        <div class="rq-item">Briefing estruturado para counsel externo</div>
+        <div class="rq-item">Sinal de risco para provisão</div>
+        <div class="rq-item">Calibração de complexidade por tipo de pergunta</div>
+        <div class="rq-item rq-item btg">↑ Priorizado pelo BTG</div>
+      </div>
+    </div>
+    <div class="rq">
+      <div class="rq-q">Q4 2026</div>
+      <div class="rq-title">Colaboração e workflow</div>
+      <div class="rq-items">
+        <div class="rq-item">Threads compartilhadas por time</div>
+        <div class="rq-item">Repositórios colaborativos de pesquisa</div>
+        <div class="rq-item">Exportação de análises em PDF</div>
+      </div>
+    </div>
+    <div class="rq">
+      <div class="rq-q">Q1 2027</div>
+      <div class="rq-title">Inteligência autônoma</div>
+      <div class="rq-items">
+        <div class="rq-item">Alertas com ação sugerida automática</div>
+        <div class="rq-item">Corpus estadual — DOEs e TJs</div>
+        <div class="rq-item">Integração via API</div>
+      </div>
+    </div>
+  </div>
+  <div class="rule" style="margin-top:1.6rem;"></div>
+  <div style="font-size:.72rem; font-weight:300; color:var(--muted); line-height:1.7; max-width:660px;">
+    As funcionalidades marcadas em itálico foram diretamente priorizadas a partir do uso real do time BTG. Clientes fundadores moldam o produto — esse é o valor de entrar agora.
+  </div>
+</section>
+
+</div>
+
+<div id="nav">
+  <button class="nb" id="pb" onclick="prev()">←</button>
+  <span id="ctr"></span>
+  <button class="nb" id="nb2" onclick="next()">→</button>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const N = slides.length;
+let cur = 0;
+
+const dotsEl = document.getElementById('dots');
+for (let i = 0; i < N; i++) {
+  const d = document.createElement('div');
+  d.className = 'dot' + (i===0?' on':'');
+  d.onclick = () => go(i);
+  dotsEl.appendChild(d);
+}
+
+function ui() {
+  dotsEl.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('on', i===cur));
+  document.getElementById('ctr').textContent = String(cur+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');
+  document.getElementById('sn').textContent = String(cur+1).padStart(2,'0')+' — '+String(N).padStart(2,'0');
+  document.getElementById('bar').style.width = ((cur+1)/N*100)+'%';
+  document.getElementById('pb').style.opacity = cur===0?'0.2':'1';
+  document.getElementById('nb2').style.opacity = cur===N-1?'0.2':'1';
+}
+
+function go(idx) {
+  if (idx<0||idx>=N||idx===cur) return;
+  const p = cur;
+  slides[p].classList.remove('active'); slides[p].classList.add('exit');
+  setTimeout(()=>slides[p].classList.remove('exit'), 380);
+  cur = idx;
+  slides[cur].classList.add('active');
+  ui();
+}
+function next() { go(cur+1); }
+function prev() { go(cur-1); }
+function tFS() { !document.fullscreenElement ? document.documentElement.requestFullscreen().catch(()=>{}) : document.exitFullscreen(); }
+
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();next();}
+  if (e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}
+  if (e.key==='Home') go(0); if (e.key==='End') go(N-1);
+  if (e.key==='f'||e.key==='F') tFS();
+});
+
+let tx=0;
+document.addEventListener('touchstart', e=>{tx=e.touches[0].clientX;});
+document.addEventListener('touchend', e=>{const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>50) dx<0?next():prev();});
+
+ui();
+</script>
+</body>
+</html>
