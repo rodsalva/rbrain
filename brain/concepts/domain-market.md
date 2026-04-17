@@ -27,15 +27,18 @@ que queremos servir e o que elas fazem hoje".
 - [custo-brasil-regulatory-complexity] — O Custo Brasil: complexidade regulatória, legislação trabalhista (CLT + convenções + TRTs), eSocial, e a oportunidade de $20-30B. Fonte: Tako CEO Sebas Mejia (abr/2026).
 - [latam-ai-opportunity-haas] — LATAM AI: oportunidade de skip-generation (HaaS → AI direto), tamanho de mercado, risco de soberania e o que é preciso para vencer. Fonte: Tako CEO Sebas Mejia (abr/2026).
 
+- [manor-taxupdate-competitor] — TaxUpdate (taxupdate.com.br): competitor discovery. Trial solicitado via Tax Group (abr/2026).
+
 ## Gaps / O que falta
 
 - ICP detalhado por segmento (PME vs. empresa média vs. enterprise)
 - Mapa de dor quantificado por função tributária
 - Pesquisa de willingness-to-pay por segmento
-- Análise competitiva (quem mais está indo nesse mercado)
+- Avaliação completa do TaxUpdate após acesso ao trial
 
 ---
 
 ## Timeline
 
 - **2026-04-15** | Criação — Hub do domínio Market criado. 1 página indexada (funções tributárias Brasil).
+- **2026-04-17** | Competitor — TaxUpdate (taxupdate.com.br) descoberto por RS. Trial solicitado.
