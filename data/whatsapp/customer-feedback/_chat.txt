@@ -1,0 +1,536 @@
+[3/5/26, 2:55:39 PM] Felipe Vasconcellos: Boa tarde Felipe, segue feedback da plataforma Manor:
+
+A plataforma apresentou uma melhora significativa no tempo de retorno de resposta se comparado com nov/25, contudo quando comparado com algumas IAs que usamos aqui na Odebrecht (copilot e chat GPT) o tempo de retorno ainda é bem superior.
+Outro ponto que gostaria de sinalizar seria no tipo de devolutiva das resposta, hoje em dia na Correia da rotina tributária, buscamos ferramentas objetivas, e tenho percebido que as vezes fazemos perguntas básicas e vem um
+Retorno muito completo, com informações não necessárias naquele momento, embora no contexto geral faça parte do assunto, segue exemplo abaixo em formato de vídeo.
+O esperado seria um sim ou não, e o artigo específico da IN com o descritivo.
+[3/5/26, 2:55:40 PM] Felipe Vasconcellos: O retorno dela é interessante porém para estudos mais abrangentes, no dia a dia buscamos a praticidade, e as vezes temos que ler diversos artigos e parágrafos, e fazer uma interpretação.
+[3/5/26, 2:55:40 PM] Felipe Vasconcellos: Essa comparação se dá com as IAs quê citei, onde o retorno é objetivo e fundamento, e conseguimos fazendo perguntas adicionais se necessário.
+‎[3/5/26, 2:55:40 PM] Felipe Vasconcellos: ‎<attached: 00000925-VIDEO-2026-03-05-14-55-40.mp4>
+[3/5/26, 2:55:43 PM] Felipe Vasconcellos: Odebrecht
+[3/5/26, 2:55:59 PM] Felipe Vasconcellos: Bom dia. Claro. Testei com 3 ou 4 perguntas mais da minha área financeira (sobre debêntures de infra e sobre financiamentos feitos a partir do exterior e as implicações fiscais.)
+Nas perguntas das debêntures, achei q as respostas vieram bem claras, embasadas e e com as referências dos trechos da lei, q ajuda mto. 
+Nas demais perguntas, não sei se a formulação não estava clara, mas travava na tentativa de otimizar/reformular a pergunta. E não gerava nenhuma resposta.
+Talvez senti falta de uma continuidade a partir desse ponto que trava, pq não ficava claro o motivo de ter travado.
+Não sei também se foi por que era mais uma dúvida das implicações fiscais e o app é mais voltado para as questões legais em si.
+[3/5/26, 2:56:04 PM] Felipe Vasconcellos: BNP
+‎[3/5/26, 2:56:18 PM] Felipe Vasconcellos: ‎<attached: 00000929-AUDIO-2026-03-05-14-56-18.opus>
+[3/5/26, 2:56:29 PM] Felipe Vasconcellos: Mateus (professor reforma)
+[3/5/26, 2:57:36 PM] Felipe Vasconcellos: Cara, a gente adorou, é muito prático para consulta, jurisprudência, solução de consulta.
+[3/5/26, 2:57:36 PM] Felipe Vasconcellos: Nos fez economizar muito tempo de pesquisa.
+[3/5/26, 2:58:03 PM] Felipe Vasconcellos: Vieites Mizrahi Rei
+‎[3/5/26, 2:58:50 PM] Felipe Vasconcellos: ‎<attached: 00000934-AUDIO-2026-03-05-14-58-50.opus>
+[3/5/26, 2:58:54 PM] Felipe Vasconcellos: BBL
+[3/5/26, 3:16:46 PM] Milton: Odebrecht parece querer um produto diferente do que a gente está fazendo
+[3/5/26, 3:22:55 PM] Felipe Vasconcellos: Não da pra agradar todo mundo. Se não entrarmos pela pesquisa, que seja pelo monitoramento e/ou pelos casos
+[3/5/26, 3:23:06 PM] Felipe Vasconcellos: reforma
+[3/5/26, 3:30:06 PM] RS: eu acho que no modo chat, se for viavel abaixar ainda mais latencia, roda legal com eles
+[3/5/26, 3:30:21 PM] RS: pq vai ter um modo completo mais robusto / preciso / demorado
+[3/5/26, 3:30:28 PM] RS: pra quem quiser
+[3/5/26, 3:30:38 PM] RS: e quem quiser algo mais rapido / menor / um pouco menos preciso = chat
+[3/5/26, 3:30:49 PM] RS: faz sentido ou n?
+‎[3/5/26, 5:28:35 PM] Felipe Vasconcellos: ‎<attached: 00000944-AUDIO-2026-03-05-17-28-35.opus>
+[3/5/26, 5:28:44 PM] Felipe Vasconcellos: Marcelao bzcp. 4 mins
+[3/5/26, 5:29:51 PM] RS: lenda
+[3/5/26, 6:11:22 PM] Milton: Muito bom o feedback
+[3/5/26, 6:11:36 PM] Felipe Vasconcellos: Sim
+[3/5/26, 6:12:01 PM] Milton: Acho incrível que ele não suaviza as críticas e são bem embasadas.
+[3/5/26, 6:12:50 PM] Milton: Vou tentar achar a pergunta sobre JCP dele e entender o que aconteceu
+[3/5/26, 6:13:10 PM] Felipe Vasconcellos: Blz! Qlq coisa me avisa que ajudo
+‎[3/5/26, 6:19:52 PM] RS: WhatsApp Audio 2026-03-05 at 17.28.35.pdf • ‎2 pages ‎<attached: 00000952-WhatsApp Audio 2026-03-05 at 17.28.35.pdf>
+‎[3/5/26, 6:22:08 PM] Felipe Vasconcellos: Feedback Pioneers - fevereiro 2026.docx ‎<attached: 00000953-Feedback Pioneers - fevereiro 2026.docx>
+[3/5/26, 7:31:34 PM] RS: aula
+[3/6/26, 1:44:49 AM] Felipe Vasconcellos: Felipão,
+
+Seguem 2 feedbacks do pessoal que usou a ferramenta aqui no escritório.
+Estou ainda aguardando outro e te passo amanhã!
+
+
+Usuário 1: 
+ 
+Seguem meus comentários:
+ 
+Positivos:
+As respostas foram mais aprofundadas e certeiras do que outras ferramentas de AI;
+Em nenhum dos retornos eu identifiquei cases “inventados” (alucinações), como geralmente ocorre no ChatGPT.
+ 
+Negativos:
+Após o primeiro retorno, não há possibilidade de enviar um novo prompt na mesma conversa.
+Alguns retornos foram mais longos do que o necessário, com texto corrido. Seria interessante programar a AI para dar certos retornos com bullet points, por exemplo.
+ 
+Usuario 2:
+ 
+ 
+I- Funcionalidade
+ 
+Após a abertura do chat com a primeira pergunta a plataforma não possibilita que você faça mais perguntas no mesmo chat. Isso me incomodou bastante, pois gostaria de fazer mais perguntas e aprofundar alguns pontos trazidos pela plataforma.
+ 
+II- Abordagem dos Temas
+ 
+Ao perguntar genericamente sobre amortização de ágio utilizando empresa veículo a plataforma me trouxe a fundamentação legal, precedentes do CARF e até obrigações acessórias, mas não menciona em nenhum momento que o tema está em vias de ser julgado pelo STJ.
+ 
+Além disso, o tom que a plataforma aborda o tema dá a entender que o entendimento sobre o tema é amplamente favorável ao contribuinte, sem ressalvas sobre os critérios que são observados nas operações que são legitimadas.
+ 
+Ao perguntar sobre o conceito de insumo para fins de PIS/COFINS a plataforma trouxe informações suscintas, trazendo o Parecer Normativo e também acórdãos do CARF.
+ 
+Em ambas as pesquisas senti falta de uma análise mais aprofundada dos temas, mas talvez esse não seja o intuito do desenvolvedor.  De toda forma, eu acho que é um excelente ponto de partida para qualquer pesquisa de jurisprudência.
+[3/6/26, 1:45:15 AM] Felipe Vasconcellos: RV Pinheiro
+[3/6/26, 6:11:03 AM] RS: otimo batch de feedback
+[3/6/26, 6:11:05 AM] RS: parabens
+[3/6/26, 6:11:24 AM] RS: vou tentar usar IA para resumir e compartilharmos de forma resumida com time
+[3/6/26, 10:01:50 AM] Milton: Pra mim está ficando claro que temos dois tipos de feedbacks aqui: o que vem dos escritórios e das empresas. 
+Escritórios claramente a gente tem mais aderência, os feedbacks apontam correções e evoluções. 
+Empresas rola até um pouco até de frustração porque eles esperam algo diferente.
+[3/6/26, 12:11:40 PM] Felipe Vasconcellos: Oi Luiz, tudo certo?
+
+Fiz alguns testes aqui da ferramenta e gostei bastante. Ela é muito parecida com algumas outras ferramentas de pesquisa que já usei para ver juris (como Gemini ou Perplexity AI)... eu diria que ela chega até a ser melhor porque a Manor traz o julgado/Solução de Consulta direto do site da RFB/CARF - diferentemente das outras IAs que geralmente recorrem a notícias ou trechos em artigos de sites de escritório.
+
+Duas coisas que pensei que poderiam ser interessantes, e que já vi algumas IAs fazerem:
+
+(i) a possibilidade de entregar um relatório com a pesquisa (tipo um Excel mesmo com o material levantado).
+
+(ii) a possibilidade de se realizar pesquisas por palavras chave - se bem que eu cheguei a sugerir isso na mensagem que enviei para a IA e senti que funcionou até que bem.
+
+Uma coisa que aconteceu comigo algumas vezes, enquanto eu testava, foi de que a resposta travava no meio e não ficava completa (que nem no print abaixo). Enviei o mesmo prompt algumas vezes mas travou, e depois que dei f5 acho que foi.
+
+Pelos materiais que ela localizou, senti que ela pega os principais julgados / SCs do tema, o que ajudou bastante (eu tinha enviado um prompt solicitando uma pesquisa exaustiva), mas alguns casos mais específicos eu ainda teria de procurar.
+‎[3/6/26, 12:11:40 PM] Felipe Vasconcellos: ‎<attached: 00000962-PHOTO-2026-03-06-12-11-40.jpg>
+[3/6/26, 12:11:41 PM] Felipe Vasconcellos: Achei sinistro kkkkkk
+[3/6/26, 12:11:46 PM] Felipe Vasconcellos: Lefosse
+[3/6/26, 12:40:34 PM] Felipe Vasconcellos: tirando a resposta incompleta, a experiencia ta sendo boa entao?
+[3/6/26, 12:40:34 PM] Felipe Vasconcellos: Excelente!
+‎[3/10/26, 8:56:17 AM] RS: ‎<attached: 00000967-AUDIO-2026-03-10-08-56-17.opus>
+[3/10/26, 8:58:14 AM] Felipe Vasconcellos: Quem é?
+[3/10/26, 8:58:36 AM] RS: um amigo
+[3/10/26, 8:58:43 AM] Felipe Vasconcellos: Excelente
+[3/10/26, 8:58:47 AM] RS: founder NG Cash
+[3/12/26, 2:02:30 PM] Felipe Vasconcellos: Fala, Felipe! Tudo bem?
+[3/12/26, 2:02:31 PM] Felipe Vasconcellos: Vou te mandar amanhã um textinho mais detalhado sobre sugestões pro Manor
+[3/12/26, 2:02:31 PM] Felipe Vasconcellos: Mas, desde já, adianto que superou minhas expectativas
+[3/12/26, 2:02:31 PM] Felipe Vasconcellos: As sugestões que apontarei são majoritariamente detalhes
+[3/12/26, 2:02:35 PM] Felipe Vasconcellos: BBL
+[3/12/26, 2:03:58 PM] Felipe Vasconcellos: A propósito, você chegou a falar de TRFs e STJ. Chegou a subir?
+[3/16/26, 3:08:01 PM] Felipe Vasconcellos: Fala Felipe!
+[3/16/26, 3:08:02 PM] Felipe Vasconcellos: To em falta contigo, mas inclui na minha rotina o manor
+[3/16/26, 3:08:02 PM] Felipe Vasconcellos: e tenho achado mto bom
+[3/16/26, 3:08:02 PM] Felipe Vasconcellos: Outro ponto que achei mto bom é que o sistema dá uma aperfeiçoada na pesquisa e sugere uma redação de pergunta
+[3/16/26, 3:08:06 PM] Felipe Vasconcellos: Sacic
+[3/16/26, 3:10:57 PM] Felipe Vasconcellos: um ponto que nós 2 achamos que vale investir é tornar mais interativo
+[3/16/26, 3:10:57 PM] Felipe Vasconcellos: pq fazemos a pergunta, vem uma resposta completa (até com pontos além, mas que eu, particularmente, gosto. ex.: traz comentários sobre obrigações acessórias)
+[3/16/26, 3:10:57 PM] Felipe Vasconcellos: mas depois da resposta, temos que fazer uma pergunta via um novo prompt
+[3/16/26, 3:12:04 PM] RS: haaammmm
+[3/16/26, 3:13:02 PM] Felipe Vasconcellos: até nesse ponto, talvez o ajuste seja em trazer uma resposta mais enxuta e, as informações adicionais que já têm vindo, serem oferecidas como uma pergunta em continuidade à pesquisa pelo próprio sistema
+[3/18/26, 10:34:24 AM] Felipe Vasconcellos: Acho que velocidade melhorou um pouco, mas esse texto que mostra a etapa de carregamento achei boa, dá uma segurada na ansiedade
+Em relação a erros não percebi muitos, acho que ainda em relação a alucinação o Manor é muito melhor do que os outros AI, mas em relação a desenvolvimento da resposta e conseguir continuar a conversa os demais AIs ainda tem uma vantagem
+[3/18/26, 10:34:28 AM] Felipe Vasconcellos: Btg
+[3/18/26, 10:37:46 AM] Milton: >  a desenvolvimento da resposta e conseguir continuar a conversa os demais AIs ainda tem uma vantagem
+Acho que esse é o maior feedback de todo mundo, né? 
+Se fosse olhar uma feature que todo mundo quer é continuar conversa, certo?
+[3/18/26, 10:38:13 AM] Felipe Vasconcellos: Isso
+[3/18/26, 10:38:37 AM] Milton: Mas é bem legal que isso está surgindo organicamente dos Pioneers. Não estamos supondo, eles que estão falando que é isso.
+[3/18/26, 10:39:03 AM] Felipe Vasconcellos: Sinal de que estao gostando e querem explorar mais
+[3/18/26, 10:39:27 AM] Milton: > acho que ainda em relação a alucinação o Manor é muito melhor do que os outros AI
+Isso aqui é bem importante.
+[3/18/26, 10:39:36 AM] Felipe Vasconcellos: Sim
+[3/18/26, 10:40:38 AM] Milton: Isso aqui pode ajudar bastante a gente:
+https://www.conjur.com.br/2026-mar-17/ma-fe-em-uso-de-ia-irrita-tribunais-e-leva-a-condenacao-de-advogados/
+[3/18/26, 10:41:22 AM] Milton: > A citação de precedentes inexistentes ou de informações imprecisas criadas por ferramentas de inteligência artificial em petições assinadas por advogados tem levado o Poder Judiciário não só a aplicar multa por litigância de má-fé, mas a vislumbrar a ocorrência de crime.
+[3/18/26, 10:41:39 AM] Milton: > São as maiores punições financeiras registradas até o momento, conforme levantamento da revista eletrônica Consultor Jurídico. Mas poderia ser pior: o CPC admite até dez salários mínimos de multa ou até 10% sobre o valor da causa.
+[3/18/26, 10:42:22 AM] Milton: Se alguma hora chegar nesses 10% sobre o valor da causa, para os casos que estamos olhando de tributário, povo para de usar GPT na mesma hora.
+‎[3/20/26, 12:07:59 PM] Felipe Vasconcellos: Feedback Pioneers - março 2026.docx ‎<attached: 00001000-Feedback Pioneers - março 2026.docx>
+‎[3/20/26, 7:00:42 PM] Felipe Vasconcellos: Bora galera!! Salomão Advogados ‎<attached: 00001001-PHOTO-2026-03-20-19-00-42.jpg>
+[3/20/26, 7:03:39 PM] Felipe Vasconcellos: Atualização diaria rodando Miltinho 👏🏻👏🏻👏🏻
+‎[3/20/26, 7:11:28 PM] RS: ‎<attached: 00001003-STICKER-2026-03-20-19-11-28.webp>
+[3/20/26, 7:16:59 PM] Milton: É, não tem um que não fale do chat
+[3/20/26, 7:17:46 PM] Felipe Vasconcellos: Sim
+[3/20/26, 7:43:08 PM] RS: exatamente
+[3/24/26, 1:42:29 PM] Felipe Vasconcellos: Oi Felipe! Perdão a demora! Vou colocar, abaixo, um resumo das primeiras impressões e sugestões:
+
+Achei a plataforma muito boa mesmo. Não lembro de nada que eu pesquisei nela sabendo ter julgado e ela não me retornou. Alguns pontos que poderia melhorar:
+
+	. Percebi que quanto abrimos PDFs do CARF por ela não é possível selecionar para copiar trechos e números. Tê-los já é um adianto, pois me permite buscá-los no site do CARF e baixar, mas se pudesse copiar já no arquivo que abro pelo Manor, seria mais prático;
+
+	. A plataforma tende a dar respostas muito longas e realmente explorando várias acepções do tema. Isso é, em muitas vezes, útil, mas às vezes acaba tomando tempo, você procurar onde na resposta tem o que você quer. Talvez ter duas opções de resposta (mais aprofundada X direto ao ponto) fosse uma boa;
+
+	. Em alguns julgados do STF, a página levou diretamente para a página de consulta/pesquisa do STF, e não para o acórdão;
+
+	. Detalhe bobo técnico: a IA frequentemente se refere a artigos de Soluções de Consulta, o que não existe. As soluções indicadas geralmente entregam o que preciso, mas a IA menciona “isso pode ser visto no art. 1º da Solução...”, sendo que Soluções não possuem artigos;
+
+	. Eu sinto que ele evita ao máximo te deixar sem resposta. Ele não inventa nada, mas, quando sem resposta, fornece analogias. Isso é bem bom. Às vezes a analogia é meio nada a ver e acaba sendo frustrante, mas acho que prefiro tê-las e me frustrar às vezes do que não as ter;
+
+	. Algumas vezes aconteceu de algum erro fazer com que não viesses links nas respostas e, ao laco dos pontos onde penso que o link seria inserido, vir um “[device: XXXXXXXXXX]”.
+[3/24/26, 1:42:29 PM] Felipe Vasconcellos: Além disso, uma sugestão que pensei:
+
+	. Às vezes eu quero uma resposta de posicionamento do CARF e às vezes só quero um catatal de julgados para apresentar numa defesa. O Manor é perfeito para o 1º, pois ele me da a resposta e cita uns 2/3 julgados de exemplo. Mas seria legal ter uma opção “me dê vários julgados desse tema”. E, claro, ideal nessa opção seria um julgado de cada turma.
+[3/24/26, 1:42:55 PM] Felipe Vasconcellos: BBL Advogados
+[3/24/26, 1:45:35 PM] Felipe Vasconcellos: Essa sugestão de retorno por turma, inclusive, no STJ seria muito boa. Porque, vira e mexe, 1ª e 2ª turma divergem
+[3/24/26, 1:51:07 PM] Milton: > Percebi que quanto abrimos PDFs do CARF por ela não é possível selecionar para copiar trechos e números. Tê-los já é um adianto, pois me permite buscá-los no site do CARF e baixar
+Mas os PDFs abrem a partir do site do Carf, não é mais o nosso site ali.
+[3/24/26, 1:51:37 PM] Milton: Tanto que esse lance de não poder selecionar é coisa deles tentando bloquear crawler.
+[3/24/26, 1:52:38 PM] RS: aquela ideia de visualizar o pdf / site dentro da propria Manor ajudaria em algo ou nao?
+[3/24/26, 1:52:51 PM] Milton: Sim, ajudaria bastante nesse caso.
+[3/24/26, 1:52:54 PM] RS: 😉
+[3/24/26, 1:53:15 PM] Milton: > Às vezes eu quero uma resposta de posicionamento do CARF e às vezes só quero um catatal de julgados para apresentar numa defesa. O Manor é perfeito para o 1º, pois ele me da a resposta e cita uns 2/3 julgados de exemplo. Mas seria legal ter uma opção “me dê vários julgados desse tema”. E, claro, ideal nessa opção seria um julgado de cada turma.
+Isso aqui seria a resposta rápida.
+[3/24/26, 1:54:10 PM] Milton: Tem um overlap de conceito entre o que fizemos de resposta rápida, atualização diária e monitoramento que sempre fica na minha cabeça mas nunca consigo visualizar a junção aqui.
+[3/24/26, 1:55:25 PM] Felipe Vasconcellos: https://acordaos.economia.gov.br/solr/acordaos2_shard9_replica_n115/browse?q=
+[3/24/26, 1:55:25 PM] Felipe Vasconcellos: Aqui no "Projeto VER", do CARF, eu clico para abrir em outra aba e consigo copiar, por ex
+[3/24/26, 1:57:52 PM] Milton: Mas olha o nosso link:
+https://acordaos.economia.gov.br/acordaos2/pdfs/processados/10909004076201014_7202905.pdf
+[3/24/26, 1:58:34 PM] Milton: É do mesmo site. Tem PDF que você vai conseguir copiar, tem pdf que não e acho que o browser influencia, mas não é mais do nosso lado.
+[3/24/26, 1:58:43 PM] Felipe Vasconcellos: Blz
+[3/24/26, 1:59:30 PM] Milton: Estou falando do que acontece quando você clica em “ver documento original” -> https://acordaos.economia.gov.br/acordaos2/pdfs/processados/11516721607201285_6943806.pdf
+[3/24/26, 2:03:41 PM] RS: vou botar atuali dia = monitoramento
+
+beleza?
+
+acho que o overlap eh monitoramento emender em pesquisa e vice-versa
+[3/24/26, 2:21:31 PM] Felipe Vasconcellos: No final do dia é uma lista da legis/juris sobre o tema pesquisado
+[3/24/26, 2:22:03 PM] Felipe Vasconcellos: Sem texto, apenas normas e acordaos
+[3/24/26, 3:24:06 PM] Milton: que é a pesquisa rápida.
+[3/24/26, 3:24:43 PM] Felipe Vasconcellos: Sim, mas ainda nao acertamos a resposta.
+[3/24/26, 3:33:54 PM] Milton: Esse ponto aqui a gente vai precisar entender com calma:
+
+> A plataforma tende a dar respostas muito longas e realmente explorando várias acepções do tema. Isso é, em muitas vezes, útil, mas às vezes acaba tomando tempo, você procurar onde na resposta tem o que você quer. Talvez ter duas opções de resposta (mais aprofundada X direto ao ponto) fosse uma boa;
+
+Acho que já vi mais de uma vez, pessoas que acham a nossa resposta padrão atual profunda demais.
+[3/24/26, 3:35:25 PM] Felipe Vasconcellos: Sim, odebrecht bate nesse ponto tb
+[3/24/26, 3:40:13 PM] Felipe Vasconcellos: Na resposta completa a gente mata essa questao c o sumario executivo
+[3/24/26, 3:43:35 PM] Milton: Eu acho que tem alguma coisa diferente aqui ainda. Vou pensar um pouco hoje e amanhã acho que consigo articular melhor.
+[3/24/26, 3:45:26 PM] Felipe Vasconcellos: Boa!!
+[4/3/26, 1:07:09 PM] Felipe Vasconcellos: Bom dia, desculpa a demora…
+Eu entendo que sim, o ideal seria uma resposta objetiva e posteriormente a fundamentação.
+Ou até mesmo uma explicação argumentada, e no final um item talvez como “ Conclusão” com uma resposta objetiva
+[4/3/26, 1:07:09 PM] Felipe Vasconcellos: Por exemplo: as vezes entro numa reunião e vem algum questionamento até básico, mas pra responder com segurança eu acabo consultando uma IA, e durante a reunião não tenho tempo de ficar lendo toda a contextualização, fundamentação etc….assim já vou direto na conclusão
+[4/3/26, 1:07:25 PM] Felipe Vasconcellos: Odebrecht dando sugestao p aperfeiçoar a resposta padrao
+[4/3/26, 1:28:06 PM] RS: Sera q a gente mete no configuracoes?
+[4/3/26, 1:28:11 PM] RS: Jeito da resposta e tal
+[4/3/26, 2:11:29 PM] Milton: Eles precisam de um tl,dr
+[4/3/26, 2:12:40 PM] Milton: Mas é um feedback bom de verdade. Ajuda a validar o ICP.
+[4/3/26, 2:12:59 PM] Milton: Querem levar a gente pra dentro de reuniões pra ajudar na tomada de decisão
+[4/3/26, 3:07:58 PM] Felipe Vasconcellos: Concordo. Fazendo sentido ajustar esses pontos, nossas chances de conversão aumentam
+[4/3/26, 5:20:12 PM] Felipe Vasconcellos: Separei “o que falta” para escrits e empresas top tier:
+
+Pinheiro Neto 
+
+Falta:
+
+- Segurança nível “Harvey” (dados confidenciais, contrato claro) 
+- Analytics do CARF (probabilidade, padrão de decisão, conselheiros) 
+- Modo profundo (one-shot bem embasado) 
+- Continuidade de contexto (follow-ups naturais) 
+
+Rede D’Or 
+
+Falta:
+
+- Precisão básica em temas sensíveis (erro factual crítico) 
+
+Mattos Filho
+
+Falta:
+
+- Expandir para jurisprudência mais ampla (já funciona bem) 
+
+Lefosse
+
+Falta:
+
+- Exportar resultado (Excel / relatório) 
+- Estabilidade (resposta travando) 
+- Cobertura de casos mais específicos 
+
+Odebrecht
+
+Falta:
+
+- Velocidade (mais lento que concorrentes) 
+- Objetividade (resposta muito longa) 
+- Modo “resposta direta” (sim/não + fundamento)
+
+C6
+
+Falta:
+
+- Profundidade ainda maior (inclusive votos) 
+- Pode ser mais lento, desde que melhor 
+
+BTG
+
+Falta:
+
+- Velocidade 
+- Estabilidade (erros recorrentes) 
+- Continuidade de chat 
+- Profundidade em casos específicos 
+- Atualização normativa (evitar normas revogadas)
+[4/3/26, 5:29:45 PM] RS: Boaaaaaaaaaaaa hein
+[4/3/26, 5:52:51 PM] Milton: Profundidade/resposta mais completa parece ser necessidade de banco/mercado financeiro
+[4/3/26, 5:53:55 PM] Milton: Mas talvez outros ramos queiram algo mais na linha de resposta rápida/precisao
+[4/3/26, 5:55:17 PM] Milton: Talvez vale dar uma olhada em que problemas o btg e o c6 estão tentando resolver, quais perguntas, se tem algum padrão
+[4/3/26, 5:55:33 PM] Felipe Vasconcellos: Vou olhar
+[4/3/26, 5:55:54 PM] Milton: Será que tem relação a fundo, precatório ou volume?
+[4/3/26, 5:56:12 PM] Felipe Vasconcellos: Btg o Rodrigo já levantou
+[4/3/26, 6:00:41 PM] Felipe Vasconcellos:
+‎[4/3/26, 6:00:41 PM] Felipe Vasconcellos: ‎<attached: 00001052-PHOTO-2026-04-03-18-00-41.jpg>
+‎[4/3/26, 6:00:42 PM] Felipe Vasconcellos: ‎<attached: 00001053-PHOTO-2026-04-03-18-00-42.jpg>
+‎[4/3/26, 6:00:42 PM] Felipe Vasconcellos: ‎<attached: 00001054-PHOTO-2026-04-03-18-00-42.jpg>
+[4/3/26, 6:04:03 PM] Felipe Vasconcellos: Resposta completa pd resolver
+[4/3/26, 6:04:19 PM] Felipe Vasconcellos: O tapa que o Saulo vai dar na padrao pd ajudar
+[4/3/26, 6:27:06 PM] Milton: Agora a gente pode tentar cruzar com c6
+[4/3/26, 6:27:57 PM] Felipe Vasconcellos: Consegue identificar? O Katz (cfo) foi o único que usou
+[4/3/26, 6:28:49 PM] Felipe Vasconcellos: philippe.katz@c6bank.com
+[4/6/26, 8:52:00 AM] Felipe Vasconcellos: ‎This message was deleted.
+[4/6/26, 9:34:08 PM] Felipe Vasconcellos: Boaa
+[4/6/26, 9:34:08 PM] Felipe Vasconcellos: Vou testar
+[4/6/26, 9:34:08 PM] Felipe Vasconcellos: Irado
+[4/6/26, 9:34:11 PM] Felipe Vasconcellos: Katz
+[4/7/26, 2:01:09 PM] Felipe Vasconcellos: ‎This message was deleted.
+[4/7/26, 2:01:12 PM] Felipe Vasconcellos: Sacic
+‎[4/7/26, 2:02:22 PM] Felipe Vasconcellos: ‎<attached: 00001067-AUDIO-2026-04-07-14-02-22.opus>
+‎[4/7/26, 2:10:14 PM] Felipe Vasconcellos: AUDIO-2026-04-07-14-02-22.pdf • ‎1 page ‎<attached: 00001068-AUDIO-2026-04-07-14-02-22.pdf>
+‎[4/7/26, 2:12:07 PM] Felipe Vasconcellos: ‎<attached: 00001069-AUDIO-2026-04-07-14-12-07.opus>
+‎[4/7/26, 2:12:19 PM] Felipe Vasconcellos: ‎<attached: 00001070-AUDIO-2026-04-07-14-12-19.opus>
+[4/7/26, 2:12:25 PM] Felipe Vasconcellos: Sobre processo
+‎[4/7/26, 2:15:43 PM] Felipe Vasconcellos: ‎<attached: 00001072-AUDIO-2026-04-07-14-15-43.opus>
+[4/7/26, 2:23:00 PM] Felipe Vasconcellos: Processo + monitoramento trabalhando junto
+[4/7/26, 2:23:35 PM] Felipe Vasconcellos: Entender estilo de escrita + elaborar primeira minuta
+[4/7/26, 2:24:06 PM] Felipe Vasconcellos: Feedback sobre chatgpt p elaboracao de defesa
+‎[4/7/26, 4:22:04 PM] RS: New Recording 3.txt ‎<attached: 00001076-New Recording 3.txt>
+‎[4/7/26, 4:22:24 PM] RS: New Recording 4.txt ‎<attached: 00001077-New Recording 4.txt>
+[4/7/26, 4:38:52 PM] RS: Stellar
+[4/7/26, 5:23:45 PM] Felipe Vasconcellos: Principais insights:
+1) Acesso a decisões judiciais de 1ª instância (liminares e sentenças)
+2) Focar na reforma tributária, com direcionamento estratégico para o varejo (onde está a maior concentração de receita) e para empresários de médio porte, que normalmente contam com estruturas jurídicas mais enxutas
+3) Incluir normas contábeis, especialmente as resoluções do Conselho Federal de Contabilidade, garantindo alinhamento entre aspectos tributários e contábeis
+4) Possibilidade de inclusão de anexos e documentos
+5) Atualização diária com resumos executivos para facilitar a leitura e a tomada de decisão
+6) Forte aderência da Manor a consultorias, especialmente aquelas que atuam com planejamento tributário e compliance
+7) Desenvolvimento de uma calculadora para apuração da tributação mínima aplicável a pessoas físicas de alta renda, com foco na tributação de aplicações financeiras. A Lei nº 14.754/2023 promoveu mudanças relevantes na tributação de investimentos no exterior e fundos fechados, exigindo maior rigor contábil para entidades controladas (offshores) e trusts. Como referência de mercado, o Cescon Barrieu cobra aproximadamente R$ 8 mil por CPF por solução similar. ‎<This message was edited>
+[4/7/26, 6:40:03 PM] RS: Vascao
+[4/7/26, 6:40:07 PM] RS: rodei aqui meus prompts
+[4/7/26, 6:40:13 PM] RS: lista veio um pouco diferente...
+[4/7/26, 6:40:16 PM] RS: veja:
+
+Vou ler a segunda transcrição também antes de montar a lista.Agora tenho o quadro completo. Vou cruzar os dois áudios com os insights que você listou.
+
+Rodrigo, a sua lista de insights é boa mas perde algumas nuances importantes da conversa. Vou te dar minha leitura:
+
+**O que você captou bem:** decisões de 1ª instância, reforma tributária pro varejo, normas contábeis/CPC, calculadora do imposto mínimo, e aderência a consultorias.
+
+**O que ficou de fora ou subestimado:** o monitoramento/clipping diário com alertas (o Michel já faz isso manualmente com o ChatGPT todo dia 8h30 — é uma dor real e imediata); a possibilidade de upload de documentos/extratos para aplicação de legislação (a Adriana pediu isso explicitamente como gargalo operacional de escala); e o peso que deram à interseção contábil-tributário como diferencial competitivo, não apenas "incluir normas contábeis".
+
+A feature de "resumos executivos diários" e "anexos/documentos" que você listou separado são na verdade duas faces do mesmo pedido: monitoramento ativo + capacidade de interagir com documentos do cliente.
+
+Aqui vai a lista ranqueada:
+
+**1. Reforma tributária como vertical principal, direcionada ao varejo** — 25 pts
+Base da pirâmide de advogados e contadores sem acesso a bons profissionais. Volume imenso, demanda comprovada (mais da metade dos usos já é reforma). Felipe e o grupo validaram com ênfase.
+
+**2. Integração contábil-tributária (CPC, IFRS, resoluções CFC)** — 20 pts
+Mencionado por praticamente todos. O advogado não entende contabilidade, o contador erra e o advogado paga. Quem resolver essa ponte domina o mercado. Não é "incluir normas" — é fazer a Manor ser o ponto de interseção que não existe hoje.
+
+**3. Calculadora do imposto mínimo (Lei 14.754) para PF de alta renda** — 18 pts
+Chamaram de "golaço" duas vezes. Não existe no mercado a não ser o Cescon a R$8k/CPF. Aplicação direta para family offices e assessores de investimento. Produto monetizável de cara.
+
+**4. Monitoramento/clipping diário com alertas e resumo executivo** — 15 pts
+O Michel já faz isso artesanalmente com ChatGPT todo dia. Se a Manor fizer isso nativamente com as fontes oficiais já indexadas, mata uma dor diária real. É feature de retenção — traz o usuário todo dia.
+
+**5. Upload de documentos e extratos para aplicação automática de legislação** — 12 pts
+A Adriana descreveu o gargalo: "sobe o extrato e ele aplica a 14.754". É o que destrava escala operacional para consultorias. Sem isso, o produto é pesquisa; com isso, vira ferramenta de trabalho.
+
+**6. Acesso a decisões judiciais de 1ª instância (liminares e sentenças)** — 7 pts
+Importante e mencionado no início, mas com tom de "vai chegar eventualmente". É diferencial competitivo mas não é a dor mais urgente que saiu da reunião.
+
+**7. Geração de peças/pareceres estruturados** — 3 pts
+Mencionaram que "a ideia é cuspir a peça um dia", mas com ressalva de não competir de frente com o advogado. É roadmap de médio prazo, não prioridade agora.
+[4/7/26, 6:43:40 PM] Felipe Vasconcellos: Boa!
+[4/7/26, 6:45:28 PM] RS: mas concorda?
+[4/7/26, 6:46:06 PM] RS: *1. Reforma tributária como vertical principal, direcionada ao varejo* — 25 pts
+Base da pirâmide de advogados e contadores sem acesso a bons profissionais. Volume imenso, demanda comprovada (mais da metade dos usos já é reforma). Felipe e o grupo validaram com ênfase.
+
+
+aqui da para cobrar por cliente, por exemplo @⁨Felipe Vasconcellos⁩
+[4/7/26, 6:46:13 PM] RS: olha toda conta de todo cliente custa X
+[4/7/26, 6:46:33 PM] Felipe Vasconcellos: Concordo
+[4/7/26, 6:46:42 PM] RS: *2. Integração contábil-tributária (CPC, IFRS, resoluções CFC)* — 20 pts
+Mencionado por praticamente todos. O advogado não entende contabilidade, o contador erra e o advogado paga. Quem resolver essa ponte domina o mercado. Não é "incluir normas" — é fazer a Manor ser o ponto de interseção que não existe hoje.
+
+*3. Calculadora do imposto mínimo (Lei 14.754) para PF de alta renda* — 18 pts
+Chamaram de "golaço" duas vezes. Não existe no mercado a não ser o Cescon a R$8k/CPF. Aplicação direta para family offices e assessores de investimento. Produto monetizável de cara.
+
+botaram mt fe nisso aqui
+[4/7/26, 6:46:44 PM] RS: tb
+[4/7/26, 6:46:51 PM] Felipe Vasconcellos: Isso
+[4/7/26, 6:46:57 PM] RS: vale ventilar com Leo Choi oq ele acha disso?
+[4/7/26, 6:47:13 PM] Felipe Vasconcellos: Vale. Vou ventilar
+[4/7/26, 6:47:25 PM] RS: crack
+[4/7/26, 6:47:25 PM] RS: boa
+[4/7/26, 6:47:26 PM] RS: bora
+[4/7/26, 6:51:03 PM] Milton: CPC é meio treta, mas blz. Não é low hanging fruit.
+[4/7/26, 6:51:53 PM] RS: posso ajudar em algo para ficar mais simples? qual eh o maior gargalo?
+[4/7/26, 6:56:13 PM] Milton: O CPC é tradução de um sistema internacional que não se encaixa certinho com a legislação brasileira. Tem que manter um sistema com coerência com as normas internacionais e um sistema pra legislação BR rodando em paralelo, e não tem conciliação
+[4/7/26, 6:56:28 PM] Milton: É uma camada de explicação de discrepâncias
+[4/7/26, 6:57:12 PM] Milton: Só que os dois são dinâmicos e vão evoluindo pra caminhos diferentes
+‎[4/7/26, 6:59:30 PM] Felipe Vasconcellos: mercado grande ‎<attached: 00001102-PHOTO-2026-04-07-18-59-30.jpg>
+[4/7/26, 7:20:19 PM] RS: avisa quando ele resp? 🙏
+
+mais alguem para ventilarmos?
+[4/7/26, 7:20:33 PM] Felipe Vasconcellos: Katz
+[4/7/26, 7:20:53 PM] Felipe Vasconcellos: Aviso, ja mandei msg
+[4/7/26, 7:28:26 PM] RS: #3 Calculadora do imposto mínimo: criar calculadora da tributação mínima para PF de alta renda baseada na Lei 14.754, produto que só o Cescon oferece hoje a R$8k por CPF
+
+essa porran aqui… eh facil fazer?
+[4/7/26, 7:34:17 PM] RS: tem ideia @⁨Felipe Vasconcellos⁩?
+[4/7/26, 7:34:31 PM] Felipe Vasconcellos: Não, mas vou pesquisar
+[4/7/26, 7:41:32 PM] Felipe Vasconcellos: https://dmgsa.com.br/simulador-irpfm/
+‎[4/7/26, 7:58:47 PM] Felipe Vasconcellos: ‎<attached: 00001110-PHOTO-2026-04-07-19-58-47.jpg>
+[4/7/26, 7:59:58 PM] RS: se amarrou mais no contabil-tributario ne
+[4/7/26, 8:00:05 PM] Felipe Vasconcellos: Sim
+[4/7/26, 11:18:09 PM] Felipe Vasconcellos: 2/4 a 7/4:
+BTG – 12
+BBL Advogados – 7
+Capri Family Office – 2
+Mateus Pontalti – 2 
+BVZ Advogados – 2
+KmKKVSVUSXO2iU... - 2
+BZCP – 1 
+Grupo Lucio – 1
+Liviaayresbr@gmail.com - 1
+‎[4/7/26, 11:18:48 PM] Felipe Vasconcellos: BTG fazendo pergunta contábil ‎<attached: 00001114-PHOTO-2026-04-07-23-18-48.jpg>
+[4/8/26, 5:33:57 AM] RS: pq o Marcelao nao ta explorando mais tanto a Manor?
+[4/8/26, 5:34:06 AM] RS: ele usava no comeco e melhorou tanto dwsde entao
+‎[4/8/26, 6:11:19 AM] RS: e tardao ainda ne ‎<attached: 00001117-PHOTO-2026-04-08-06-11-19.jpg>
+[4/8/26, 6:25:24 AM] Felipe Vasconcellos: Sempre fala que vai explorar e nao usa. Quer q tente entender?
+[4/8/26, 7:04:25 AM] RS: estranho ele parar ne
+[4/8/26, 7:04:35 AM] RS: tentaria agora com atualizacoes e tal
+[4/8/26, 8:00:53 AM] Felipe Vasconcellos: Blz
+‎[4/8/26, 2:57:24 PM] RS: ‎<attached: 00001122-AUDIO-2026-04-08-14-57-24.opus>
+‎[4/8/26, 2:57:24 PM] RS: ‎<attached: 00001123-AUDIO-2026-04-08-14-57-24.opus>
+[4/8/26, 2:57:24 PM] RS: *Transcrição ✏️*
+
+Oi, tudo bem? Desculpa a demora. Então, a gente tá com bastante coisa nesses últimos tempos, tá com muita demanda, então realmente complicou mesmo pra gente ficar testando toda a versão, enfim. Na segunda vocês me enviaram pelo WhatsApp algumas coisas que entraram agora, a gente realmente não teve tempo ainda pra olhar. Eu vou ver se o pessoal vai usar essa semana ou algo do tipo. É que assim, deixa eu já te deixar, claro, né? A gente não tem costume de usar uma plataforma assim todo dia, querendo ou não, a gente ainda é muito arcaico, assim, sabe? Então, mesmo inspira que é o que tem aqui no Escritório de Jurisprudência, a gente não usa todos os dias, entendeu? Então, assim, eu não sei se vai ser uma plataforma que a gente vai conseguir usar todos os dias, que é o que você falou, mas eu vou falar pro pessoal também, dar uma olhadinha pra ver se eles precisarem de alguma outra coisa e tal, porque todo mundo tem o acesso. E aí eu vou te avisando, mas é mais por conta de demanda mesmo, gente. A gente tá com bastante demanda. Eu até te falei, eu fui olhar a nossa conversa, te falei no começo do ano aqui, que nesses últimos meses foi bem caótico pra gente, na nossa equipe, e aí realmente atrapalhou, sabe? E são coisas que a gente tem que parar, pensar, escrever. Então, por isso mesmo, tá bom?
+
+-- Transcrito por Blip ViraTexto
+[4/8/26, 2:57:24 PM] RS: *Transcrição ✏️*
+
+Mas assim que alguém testar eu aviso mas é isso sabe não sei se a gente hoje em dia a gente não tem uma plataforma que a gente usa todos os dias entendeu por conta disso eu acho que é falta de uso mesmo a gente não tem costume a gente senta e escreve pelo menos a minha equipe toda é assim e aí o escritório tá com uma plataforma de A também mas a gente não tem muito costume de usar entendeu então a pra gente o que a gente gosta mesmo e a gente usa de plataforma pra jurisprudência então a gente busca jurisprudência no caso do inspira o jus brasil enfim e mesmo assim não é todos os dias entendeu eu vi que as novas funções são legais frente a reforma e tudo mais mas não é uma coisa que por exemplo a gente do contencioso que a gente ainda tá usando que a gente ainda vê os antigos tributos e tal é não é uma coisa que a gente vai usar muito agora entendeu é enfim eu vou ver com o pessoal se eles vão conseguir testar. A casa, a semana e qualquer coisa eu te aviso, tá bom?
+
+-- Transcrito por Blip ViraTexto
+[4/8/26, 2:57:24 PM] RS: *Resumo 📝*
+
+A pessoa está relatando que não usa a plataforma em questão diariamente, pois sua equipe e ela própria não têm o costume de utilizá-la. Preferem plataformas de jurisprudência como JusBrasil. Apesar de reconhecerem as novas funções da plataforma, especialmente em relação à reforma, não é algo que usarão muito no momento, focando em questões mais antigas do contencioso. A pessoa vai verificar com a equipe se conseguirão testar a plataforma e avisará sobre os resultados.
+
+
+-- Resumido por Blip ViraTexto
+[4/8/26, 2:57:24 PM] RS: *Resumo 📝*
+
+A pessoa não usa plataformas específicas para as tarefas diárias, nem sua equipe. Preferem plataformas de jurisprudência como JusBrasil. Apesar de reconhecerem as novas funções de uma plataforma específica (A) como interessantes, especialmente com as mudanças na legislação, não a utilizam no momento, devido à falta de costume e foco em questões tributárias mais antigas. Prometem testar a plataforma (A) com a equipe e avisar o resultado.
+
+
+-- Resumido por Blip ViraTexto
+[4/8/26, 2:57:52 PM] RS: me da uma opiniao sobre oq responder @⁨Felipe Vasconcellos⁩
+[4/8/26, 3:00:28 PM] Milton: > não a utilizam no momento, devido à falta de costume e foco em questões tributárias mais antigas. Prometem
+Isso aqui parece importante. 
+Será que a gente consegue descobrir em que formato estão essas questões tributárias mais antigas? Word? E-mail? O que aconteceria se tivessemos alguma forma de trazer de maneira fácil isso e transformar em pesquisas?
+[4/8/26, 3:00:46 PM] Milton: Porque é um problema que a gente vai enfrentar em todos os clientes.
+[4/8/26, 3:01:57 PM] Felipe Vasconcellos: Agradecer pela transparencia e perguntar que feature teria q ter na plataforma para eles usarem todo dia
+[4/8/26, 3:02:25 PM] Felipe Vasconcellos: word, email.. como o Milton comentou acima
+[4/8/26, 3:03:31 PM] RS: tava pensando tipo: ok a nossa ta em outro patamar relacionado a JusBrasil
+[4/8/26, 3:03:33 PM] RS: algo assim
+[4/8/26, 3:04:06 PM] Felipe Vasconcellos: nao iria por ai
+[4/8/26, 3:05:07 PM] RS: kkkkkkkk
+[4/8/26, 3:05:10 PM] RS: posso so nao responder?
+[4/8/26, 3:05:39 PM] Felipe Vasconcellos: entendo que nao, ela foi transparente. Da p arrancar algo positivo - "o que falta?"
+[4/8/26, 3:06:02 PM] Felipe Vasconcellos: concordo com o Milton
+[4/8/26, 3:06:52 PM] Felipe Vasconcellos: pode perguntar sobre processos
+[4/8/26, 3:07:37 PM] Felipe Vasconcellos: se puderem cadastrar os processos e a Manor monitorar, sugerir juris/legis, elaborar primeira minuta..
+[4/8/26, 3:15:54 PM] RS: mandei isso
+[4/8/26, 3:15:56 PM] RS: Boa, Carol.
+
+Acho que vai ajudar bastante e poupar muito tempo. O nível de análise de jurisprudência é completamente diferente do que você encontra em qualquer plataforma.
+
+Esta semana ou na próxima, lançaremos atualizações diárias com tudo que há de novo no legislativo, administrativo e judiciário em direito tributário federal. 
+
+Quando usar, me avisa? Espero que se surpreendam muito positivamente!
+[4/8/26, 8:54:11 PM] Felipe Vasconcellos: Felipe, bati um papo com o time hoje e me passaram os seguintes comentários:
+
+- A possibilidade de reply (continuar conversando com a AI) ainda é um ponto que desestimula o uso porque exige um trabalho grande para fazer perguntas de follow-up
+- Os links para jurisprudência e leis estão muito melhores. Ocasionalmente, o link joga para um ponto na lei que não faz sentido. Um exemplo é o RIR, que abre mas às vezes no artigo errado ou no início da norma.
+- Tempo de resposta está muito melhor, deixou de ser um gargalo no nosso uso.
+
+Eu pessoalmente fiz uma consulta completa sobre imunidade de PIS/COFINS no transporte para exportação e fiquei impressionado com a qualidade da resposta, que ele entrega em formato de parecer, com tabela resumo de risco etc. Senti falta de referências a jurisprudência dos TRFs, que têm evoluído a jurisprudência e muda um pouco o prognóstico de perda na minha avaliação. Mas a completude da análise me impressionou bastante.
+[4/8/26, 8:54:23 PM] Felipe Vasconcellos: Marcelao
+[4/8/26, 9:36:07 PM] RS: bora
+[4/8/26, 9:36:14 PM] RS: Marcelao sabe mt
+[4/8/26, 9:36:15 PM] RS: confio
+[4/8/26, 9:58:14 PM] Felipe Vasconcellos: Tb
+[4/9/26, 10:44:59 AM] Felipe Vasconcellos: ‎This message was deleted.
+‎[4/9/26, 10:48:37 AM] Felipe Vasconcellos: Feedback Pioneers - abril 2026.docx ‎<attached: 00001151-Feedback Pioneers - abril 2026.docx>
+[4/10/26, 1:08:18 PM] Felipe Vasconcellos: Integração contábil tributária acho extremamente válido
+
+Já calculadora de imposto mínimo desenvolvemos um dentro de casa, mas pelo que eu tenho conversado, acho que muitas pessoas estão precisando dessa demanda, principalmente agentes autônomos talvez seja um nicho bom para explorar
+[4/10/26, 1:08:23 PM] Felipe Vasconcellos: Leo btg
+[4/10/26, 1:08:30 PM] RS: The Choi?
+[4/10/26, 1:08:34 PM] Felipe Vasconcellos: Isso
+[4/10/26, 1:09:00 PM] RS: e sobre outras areas que poderiam usar dentro do BTG?
+[4/10/26, 1:09:14 PM] Felipe Vasconcellos: Perguntei mas ainda n respondeu
+[4/10/26, 1:09:28 PM] RS: Já calculadora de imposto mínimo desenvolvemos um dentro de casa, mas pelo que eu tenho conversado, acho que muitas pessoas estão precisando dessa demanda, principalmente agentes autônomos talvez seja um nicho bom para explorar
+
+cara eu fiz algo
+
+mas zero certeza que ta correta
+[4/10/26, 1:09:45 PM] RS: Michelle e JP pediram mas nem usaram (certeza)
+‎[4/13/26, 6:20:31 PM] Felipe Vasconcellos: ‎<attached: 00001160-AUDIO-2026-04-13-18-20-31.opus>
+[4/13/26, 6:20:40 PM] Felipe Vasconcellos: Augusto Mattos Filho
+‎[4/13/26, 6:23:51 PM] Felipe Vasconcellos: AUDIO-2026-04-13-18-20-30.pdf • ‎1 page ‎<attached: 00001162-AUDIO-2026-04-13-18-20-30.pdf>
+[4/13/26, 6:43:19 PM] RS: essa eh a mensagem aqui?
+
+Jurimetria granular do CARF indexada por setor, tese e turma é o maior diferencial competitivo da Manor para advogados tributaristas
+[4/13/26, 6:43:48 PM] Felipe Vasconcellos: Isso
+‎[4/13/26, 6:44:40 PM] Felipe Vasconcellos: Na linha do PN ‎<attached: 00001165-PHOTO-2026-04-13-18-44-40.jpg>
+[4/13/26, 9:03:28 PM] Felipe Vasconcellos: Fala Felipe tudo certo e com você? Me ajuda nos dois quesitos, tanto interno quanto com clientes, mas ainda não atende de forma satisfatória, vamos dizer assim, em relação às pesquisas.
+Muitas vezes não responde de forma assertiva a pergunta e as vezes me parece que traz muita informação quando não necessário para perguntas mais simples.
+[4/13/26, 9:03:29 PM] Felipe Vasconcellos: Assim sendo bem transparente com você, o Banco está numa pegada muito grande de desenvolver internamente soluções de AI e não de adquirir ferramentas do mercado, mas de todo modo numa perspectiva macro em uma empresa me parece uma solução útil para diversas áreas não só a de tax
+[4/13/26, 9:03:33 PM] Felipe Vasconcellos: Leo Choi
+[4/14/26, 6:27:13 AM] RS: caraiiiii
+[4/14/26, 6:27:18 AM] RS: reality check foda
+[4/14/26, 6:27:20 AM] RS: bora
+[4/14/26, 6:27:33 AM] RS: interessante
+[4/14/26, 6:30:14 AM] RS: Muitas vezes não responde de forma assertiva a pergunta e as vezes me parece que traz muita informação quando não necessário para perguntas mais simples.
+
+vamos falar sobre isso hoje?
+[4/14/26, 6:30:25 AM] RS: a primeira parte to com mais dificuldade em entender, a segunda eh mais concreta
+[4/14/26, 7:37:41 AM] Felipe Vasconcellos: Bora! Falamos
+[4/14/26, 9:26:43 AM] Felipe Vasconcellos: É que tem perguntas muito simples que a ferramenta responde em um texto de 5 parágrafos, por ex: "qual alíquota aplicável no ganho de capital na alienação de um fip por um inr?"
+Espero que ele me fale 0 com as condicionantes especificas e base legal do artigo especifico
+[4/14/26, 9:27:04 AM] RS: the Choi?
+[4/14/26, 9:27:41 AM] Felipe Vasconcellos: Falei que iremos trabalhar nessa frente e voltamos p ele
+‎[4/14/26, 9:32:33 AM] RS: ‎<attached: 00001179-AUDIO-2026-04-14-09-32-33.opus>
+[4/14/26, 9:33:07 AM] Felipe Vasconcellos: Pica!!
+[4/14/26, 10:21:50 AM] Milton: Calma que tem coisa pra pensar aqui, fiquei pensando bastante nesse feedback a noite e tem algumas coisas que não batem 100% com o uso dele.
+[4/14/26, 3:28:43 PM] RS: call interessante agora com Paula do Lefosse:
+
+Com base no feedback da Paula durante a reunião
+
+Produtos que ela quer:
+
+1.  **🥇 Monitoramento automatizado de processos** — Integrar com os sistemas de gestão já existentes no escritório, extrair automaticamente as informações do processo no momento do cadastro, e alertar sobre novas legislações ou decisões relevantes para aquele caso (alerta verde/vermelho). É a feature que ela considerou mais diferenciadora e que nenhuma ferramenta oferece hoje.
+    
+2.  **🥈 Perfil de ministros/relatores** — Catálogo com o histórico de decisões e tendências de cada ministro/relator no STJ, STF e CARF (pró-contribuinte ou não). Muito útil para estratégia de captação e definição de fórum. Considerou menos viável para tribunais estaduais.
+[4/14/26, 3:29:59 PM] Milton: Esse calculo de pró-contribuinte é um pouco mais complicado de ser feito, sobretudo STJ e STF (Carf acho tranquilo)
+[4/14/26, 3:30:50 PM] RS: show
+[4/14/26, 3:30:56 PM] RS: mas o 1 seria o campeao pra ela
+[4/14/26, 3:31:06 PM] RS: pode ser um google drive com processos no limite
+[4/14/26, 3:31:08 PM] RS: upload aqui
+[4/14/26, 3:31:08 PM] RS: nao sei
+[4/14/26, 3:31:21 PM] RS: mas se integrar com algum sistema via MCP / API sei la onde ficam os casos, melhor ainda
+[4/14/26, 3:32:33 PM] Felipe Vasconcellos: Sim. Pd ser via relatório processual que eles enviam todos os meses para os clientes. Tem nome das partes, numero processo, objeto, risco e andamentos
+[4/14/26, 3:32:40 PM] Milton: Para os TRFs a gente já vai ter que começar a olhar pra processo.
+[4/14/26, 3:33:14 PM] Milton: Aquele link “externo” já precisa de uma lógica de puxar o processo inteiro e não o acordão pq isso é meio esquisito nos TRFs
+[4/15/26, 9:02:59 PM] Felipe Vasconcellos: To usando aqui e até arrependido de não ter usado mais vezes antes , melhorou bastante
+[4/15/26, 9:02:59 PM] Felipe Vasconcellos: Tá bem mais rápido e mais assertivo
+[4/15/26, 9:02:59 PM] Felipe Vasconcellos: Chambarelli 
+[4/16/26, 11:57:47 AM] Felipe Vasconcellos: Ficou muito bom!
+[4/16/26, 11:57:54 AM] Felipe Vasconcellos: Leo Choi sobre AD
+[4/16/26, 12:00:15 PM] RS: Bora Leozao porraaaaaa
