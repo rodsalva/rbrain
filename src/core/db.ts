@@ -5,6 +5,20 @@ import { GBrainError, type EngineConfig } from './types.ts';
 
 let sql: ReturnType<typeof postgres> | null = null;
 
+/**
+ * Set idle_in_transaction_session_timeout = 5min on a fresh connection.
+ * Ported from upstream v0.18.2: prevents 24h-idle connections from
+ * holding locks that block DDL (field-report root cause on Supabase).
+ * Non-fatal — some managed Postgres tenants restrict this GUC.
+ */
+export async function setSessionDefaults(conn: ReturnType<typeof postgres>): Promise<void> {
+  try {
+    await conn`SET idle_in_transaction_session_timeout = '300000'`;
+  } catch {
+    // Non-fatal
+  }
+}
+
 export function getConnection(): ReturnType<typeof postgres> {
   if (!sql) {
     throw new GBrainError(
@@ -41,6 +55,8 @@ export async function connect(config: EngineConfig): Promise<void> {
 
     // Test connection
     await sql`SELECT 1`;
+
+    await setSessionDefaults(sql);
   } catch (e: unknown) {
     sql = null;
     const msg = e instanceof Error ? e.message : String(e);
