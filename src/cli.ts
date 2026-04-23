@@ -3,6 +3,7 @@
 import { readFileSync } from 'fs';
 import { PostgresEngine } from './core/postgres-engine.ts';
 import { loadConfig, toEngineConfig } from './core/config.ts';
+import { setApiKey as setEmbeddingApiKey } from './core/embedding.ts';
 import type { BrainEngine } from './core/engine.ts';
 import { operations, OperationError } from './core/operations.ts';
 import type { Operation, OperationContext } from './core/operations.ts';
@@ -19,7 +20,7 @@ for (const op of operations) {
 }
 
 // CLI-only commands that bypass the operation layer
-const CLI_ONLY = new Set(['init', 'upgrade', 'check-update', 'import', 'export', 'files', 'embed', 'serve', 'call', 'config', 'doctor']);
+const CLI_ONLY = new Set(['init', 'upgrade', 'check-update', 'import', 'export', 'files', 'embed', 'serve', 'call', 'config', 'doctor', 'braintrust', 'granola', 'gdrive', 'slack', 'organize']);
 
 async function main() {
   const args = process.argv.slice(2);
@@ -31,7 +32,7 @@ async function main() {
   }
 
   if (command === '--version' || command === 'version') {
-    console.log(`gbrain ${VERSION}`);
+    console.log(`rbrain ${VERSION}`);
     return;
   }
 
@@ -62,7 +63,7 @@ async function main() {
   const op = cliOps.get(command);
   if (!op) {
     console.error(`Unknown command: ${command}`);
-    console.error('Run gbrain --help for available commands.');
+    console.error('Run rbrain --help for available commands.');
     process.exit(1);
   }
 
@@ -76,7 +77,7 @@ async function main() {
         const cliName = op.cliHints?.name || op.name;
         const positional = op.cliHints?.positional || [];
         const usage = positional.map(p => `<${p}>`).join(' ');
-        console.error(`Usage: gbrain ${cliName} ${usage}`);
+        console.error(`Usage: rbrain ${cliName} ${usage}`);
         process.exit(1);
       }
     }
@@ -238,6 +239,11 @@ async function handleCliOnly(command: string, args: string[]) {
     await runCheckUpdate(args);
     return;
   }
+  if (command === 'gdrive' && args.includes('--set-creds')) {
+    const { runGdrive } = await import('./commands/gdrive.ts');
+    await runGdrive(null as never, args);
+    return;
+  }
 
   // All remaining CLI-only commands need a DB connection
   const engine = await connectEngine();
@@ -283,6 +289,31 @@ async function handleCliOnly(command: string, args: string[]) {
         await runDoctor(engine, args);
         break;
       }
+      case 'braintrust': {
+        const { runBraintrust } = await import('./commands/braintrust.ts');
+        await runBraintrust(engine, args);
+        break;
+      }
+      case 'granola': {
+        const { runGranola } = await import('./commands/granola.ts');
+        await runGranola(engine, args);
+        break;
+      }
+      case 'gdrive': {
+        const { runGdrive } = await import('./commands/gdrive.ts');
+        await runGdrive(engine, args);
+        break;
+      }
+      case 'slack': {
+        const { runSlack } = await import('./commands/slack.ts');
+        await runSlack(engine, args);
+        break;
+      }
+      case 'organize': {
+        const { runOrganize } = await import('./commands/organize.ts');
+        await runOrganize(engine, args);
+        break;
+      }
     }
   } finally {
     if (command !== 'serve') await engine.disconnect();
@@ -292,8 +323,11 @@ async function handleCliOnly(command: string, args: string[]) {
 async function connectEngine(): Promise<BrainEngine> {
   const config = loadConfig();
   if (!config) {
-    console.error('No brain configured. Run: gbrain init --supabase');
+    console.error('No brain configured. Run: rbrain init --url <connection_string>');
     process.exit(1);
+  }
+  if (config.voyage_api_key) {
+    setEmbeddingApiKey(config.voyage_api_key);
   }
   const engine = new PostgresEngine();
   await engine.connect(toEngineConfig(config));
@@ -303,7 +337,7 @@ async function connectEngine(): Promise<BrainEngine> {
 function printOpHelp(op: Operation) {
   const positional = (op.cliHints?.positional || []).map(p => `<${p}>`).join(' ');
   const name = op.cliHints?.name || op.name;
-  console.log(`Usage: gbrain ${name} ${positional} [options]\n`);
+  console.log(`Usage: rbrain ${name} ${positional} [options]\n`);
   console.log(op.description + '\n');
   const entries = Object.entries(op.params);
   if (entries.length > 0) {
@@ -322,10 +356,10 @@ function printHelp() {
   const cliNames = Array.from(cliOps.entries())
     .map(([name, op]) => ({ name, desc: op.description }));
 
-  console.log(`gbrain ${VERSION} -- personal knowledge brain
+  console.log(`rbrain ${VERSION} -- personal knowledge brain
 
 USAGE
-  gbrain <command> [options]
+  rbrain <command> [options]
 
 SETUP
   init [--supabase|--url <conn>]     Create brain (guided wizard)
@@ -347,6 +381,10 @@ IMPORT/EXPORT
   import <dir> [--no-embed]          Import markdown directory
   sync [--repo <path>] [flags]       Git-to-brain incremental sync
   export [--dir ./out/]              Export to markdown
+  braintrust [--full] [--no-embed]   Fetch Q&A from Braintrust (incremental)
+  granola [--since DATE] [--full]    Fetch meeting notes from Granola (incremental)
+  gdrive [--since DATE] [--days N]   Fetch Google Docs/Drive files (auto-auth, incremental)
+  slack [--since DATE] [--days N]    Fetch Slack messages (incremental, one note per channel-day)
 
 FILES
   files list [slug]                  List stored files
@@ -383,7 +421,7 @@ ADMIN
   version                            Version info
   --tools-json                       Tool discovery (JSON)
 
-Run gbrain <command> --help for command-specific help.
+Run rbrain <command> --help for command-specific help.
 `);
 }
 
