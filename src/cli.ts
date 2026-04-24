@@ -20,7 +20,7 @@ for (const op of operations) {
 }
 
 // CLI-only commands that bypass the operation layer
-const CLI_ONLY = new Set(['init', 'upgrade', 'check-update', 'import', 'export', 'files', 'embed', 'serve', 'call', 'config', 'doctor', 'braintrust', 'granola', 'gdrive', 'slack', 'organize']);
+const CLI_ONLY = new Set(['init', 'upgrade', 'check-update', 'import', 'export', 'files', 'embed', 'serve', 'call', 'config', 'doctor', 'braintrust', 'granola', 'gdrive', 'slack', 'organize', 'youtube', 'signal-extract', 'signal-propose']);
 
 async function main() {
   const args = process.argv.slice(2);
@@ -312,6 +312,21 @@ async function handleCliOnly(command: string, args: string[]) {
       case 'organize': {
         const { runOrganize } = await import('./commands/organize.ts');
         await runOrganize(engine, args);
+        break;
+      }
+      case 'youtube': {
+        const { runYoutube } = await import('./commands/youtube.ts');
+        await runYoutube(engine, args);
+        break;
+      }
+      case 'signal-extract': {
+        const { runSignalExtract } = await import('./commands/signal-extract.ts');
+        await runSignalExtract(engine, args);
+        break;
+      }
+      case 'signal-propose': {
+        const { runSignalPropose } = await import('./commands/signal-propose.ts');
+        await runSignalPropose(engine, args);
         break;
       }
     }

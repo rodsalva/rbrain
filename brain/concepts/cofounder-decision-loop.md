@@ -36,21 +36,28 @@ Esta proposta fecha o loop: **sinal multi-fonte → convergência → proposta d
 
 ### Curadoria YouTube (novo componente)
 
-Canais alvo (iniciais, expandir com curadoria humana):
-- **Legora** — referência direta, legaltech vertical-AI competitor/benchmark
-- **Harvey AI** — referência direta, big-law vertical-AI
-- **Sequoia Capital** — "AI Ascent", founder interviews, arc talks
-- **a16z** — vertical AI, enterprise AI, founder content
-- **YC** — office hours, founder talks relevantes
-- **"Video recente da semana"** — canal aberto pra adição semanal pelo Rodrigo (quando algo novo viraliza)
+**Três modos de busca** — nenhum é um canal fixo:
 
-Heurística de ingestão:
-- Baixa transcrição via API pública do YouTube (canais específicos + vídeos novos <7 dias)
-- Filtra por keywords relevantes: `legaltech, tax, legal AI, vertical AI, founder, GTM, product strategy, enterprise AI, agentic workflow, compliance, ops`
-- Páginas salvas com frontmatter: `source_type: youtube`, `channel: <nome>`, `url: <link>`, `published_at: <data>`
-- Tag automática: `source:youtube`, `source:youtube-<channel-slug>`
+1. **People mode** — entrevistas recentes com pessoas específicas em qualquer canal:
+   - Max Junestrand (Legora cofounder), Winston Weinberg / Gabe Pereyra (Harvey AI), demais founders de legaltech vertical-AI
+   - Query YouTube: `"<nome>" interview` restrito a últimos 30 dias
+   - Captura independentemente de qual canal hospedou
 
-Ingestão roda diariamente (9h BRT, junto do git-update ou num slot próprio 8h BRT).
+2. **Trending mode** — vídeos recentes bombando em canais VC/strategy:
+   - **a16z** (Andreessen Horowitz) — vertical AI, enterprise, founder content
+   - **Sequoia Capital** — AI Ascent, arc talks, founder interviews
+   - **20VC** (Harry Stebbings) — founder + investor interviews
+   - **YC** — office hours, founder talks
+   - Filtros: últimos 14 dias + views acima de threshold do canal (ex: 50k+ pra a16z/Sequoia, 20k+ pra 20VC)
+
+3. **Ad-hoc mode** — `rbrain youtube <url>` pra qualquer vídeo que o Rodrigo quiser forçar pra dentro (algo viralizando fora do radar)
+
+Filtro comum em todos os modos: keywords relevantes no título/descrição/transcript:
+`legaltech, tax, legal AI, vertical AI, founder, GTM, product strategy, enterprise AI, agentic workflow, compliance, ops, AI startup, legal tech, lawyer AI`
+
+Páginas salvas com frontmatter: `source_type: youtube`, `channel: <nome>`, `featured_person: <se people mode>`, `url: <link>`, `published_at: <data>`, `view_count: <n>`. Tag automática: `source:youtube`, `source:youtube-<channel-slug>`, `source:youtube-<person-slug>` quando aplicável.
+
+Ingestão roda diariamente (8h BRT, antes do git-update das 9h).
 
 ## Arquitetura do loop
 

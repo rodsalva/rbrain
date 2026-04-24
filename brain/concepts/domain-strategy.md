@@ -18,9 +18,21 @@ Estratégia de empresa, vantagens competitivas, modelos de negócio, narrativas 
 - **market-entry** — Estratégias de entrada em novo mercado ou vertical
 - **vision** — Visão de longo prazo, missão, bets estratégicos
 
+## Sub-tópicos adicionais
+
+- **decision-loop** — Ritual estruturado de converter sinais multi-fonte em decisões commitadas no roadmap (WhatsApp sócios, Granola, Braintrust, GDrive, YouTube curado)
+- **market-signals** — Entrevistas e trending de a16z, Sequoia, 20VC, YC, founders de legaltech (Legora, Harvey)
+
+## Decisões estratégicas (loop)
+
+- Pendentes: `brain/decisions/pending/`
+- Decididas: `brain/decisions/decided/`
+- Outcomes mensurados: `brain/decisions/outcomes/`
+
 ## Know-How Indexado
 
 <!-- Agent: mantenha esta lista. Adicione novas páginas ao criar. -->
+- [cofounder-decision-loop] — Strategic Signal Decision Loop: ritual multi-fonte, pesos por source, convergência cross-source, review semanal quinta 17h BRT.
 - [application-layer-sherlock-defense] — Sherlock Defense: framework para empresas de application layer se defenderem de LLM providers entrando no seu vertical. Por Winston Weinberg (Harvey).
 - [brazil-regulatory-infrastructure-hidden-strengths] — Os pontos fortes ocultos do Brasil: BCB/PIX/DREX, eSocial, CADE. Por que o Brasil está à frente do mundo em infraestrutura regulatória financeira e trabalhista. Fonte: Sebas Mejia (abr/2026).
 - [manor-moat-analysis] — Sherlock Defense aplicado ao Manor: Level 1 passa, dois de três pilares de moat faltando. Prioridades: fechar BTG + integração CARF via CNPJ. SPED = fase futura (auditoria).
